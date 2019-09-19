@@ -1,3 +1,7 @@
+p{
+    font-family: "Proxima Nova Condensed", sans-serif;
+}
+
 /*-------------------------LINE--------------------------*/
 #line{
     background-color: #F14A64;
@@ -56,18 +60,45 @@
     background-image: -ms-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
     width: 305px;
     height: 64px;
-    font: 16px 'ProximaNovaCond', sans-serif;
+    font-size: 16px;
     text-transform : uppercase;
     color: #fff;
     margin: 300px 0 100px 20px;
     text-align: center;
-    letter-spacing: 0.75;
+    display: inline-block;
      
   }
-  
+  .order{
+    padding-top: 20px;
+
+  }
 
 
 /*-------------------------PARTFOLIO--------------------------*/
+#portfolio{
+    margin-bottom: 100px;
+    background: #fcf4f8;
+}
+#line__portfolio{
+    background-image:url(../img/line__portfolio.png);
+    background-position: left bottom; /* Положение фона */
+    background-repeat: repeat-x; /* Повторяем фон по горизонтали */
+    height: 20px;
+    width: 100%;
+}
+.portfolio__text{
+        font-size: 16px;
+        color: #F14A64;
+        text-transform: uppercase;
+        line-height: 1.5;
+        text-align: center;
+        height: 60px;
+       padding-top: 20px;
+}
+.portfolio__line{
+    padding-top: 30px;
+    border-bottom: #F14A64 1px solid;
+}
 .owl-prev { 
     width: 15px; 
     height: 100px; 
@@ -88,3 +119,62 @@
 } 
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 .owl-nav { display: block !important; }
+
+/*-------------------------ABOUT--------------------------*/
+.about__photo{
+    padding-left: 0px;
+}
+.about__text{
+    background-image: -moz-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    text-transform : uppercase;
+    color: #fff;
+    text-align: left;
+    height: 60px;
+   padding-top: 20px;
+   padding-left: 40px;
+   position: relative; 
+   z-index: 3;
+}
+.float__malina{
+    position: relative; 
+    top: -50px;
+    left: 90%;
+    z-index: 4;
+}
+.about__description{
+    padding-left: 40px;
+    letter-spacing: 0.3;
+    width: 80%;
+}
+
+
+
+/*-------------------------PRICE--------------------------*/
+#price{
+    background: #fcf4f8;
+}
+.cont__price{
+    margin: 30px;
+}
+.price__text{
+    background-image: -moz-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    font-size: 16px;
+    text-transform : uppercase;
+    color: #fff;
+    text-align: left;
+    height: 60px;
+   padding-top: 20px;
+   padding-left: 40px;
+   position: relative; 
+   z-index: 3;
+}
+.manicure{
+    display: flex;
+}
+.red__text{
+    color: #F14A64;
+}
