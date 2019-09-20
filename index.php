@@ -13,66 +13,6 @@ require 'PHPMailer.php';
 require 'SMTP.php';
 require 'Exception.php';
 
-
-
-
-
-
-$name=$_POST['inputform'];
-
-// Instantiation and passing true enables exceptions
-$mail = new PHPMailer;
-$mail->CharSet = 'UTF-8';
-
-
-    //Server settings
-    $mail->SMTPDebug = 3;    
-
-    $mail->isSMTP();   
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);                                         // Set mailer to use SMTP
-    
-    $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'admin@powersite.com.ua';                     // SMTP username
-    $mail->Password   = 'AueuR6GZw3';                               // SMTP password
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom('admin@powersite.com.ua', 'Powersite');
-    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
-    $mail->addReplyTo('info@powerproject.com.ua', 'Information');
-
-    // Attachments
-    // $mail->addAttachment('intro.png');    // Optional name
-
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'LEtter';
-    $mail->Body    = "
-      HEllo!!
-";
-   
-
-    $mail->send();
-    echo 'Message has been sent';
-
-?>
-
-
-
-
-
-
-
-
-<?php
 if(isset($_POST['buttonform'])){
 
 $name=$_POST['inputform'];
