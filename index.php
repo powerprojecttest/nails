@@ -37,9 +37,9 @@ $mail->SMTPOptions = array(
 );                                         // Set mailer to use SMTP
     $mail->CharSet = 'UTF-8';
     $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'admin@powersite.com.ua';                     // SMTP username
-    $mail->Password   = 'AueuR6GZw3';                               // SMTP password
+    $mail->SMTPAuth   = true;                     // Enable SMTP authentication
+    $mail->Username   = 'admin@powersite.com.ua'; // SMTP username
+    $mail->Password   = 'AueuR6GZw3';                           // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 
@@ -52,10 +52,11 @@ $mail->SMTPOptions = array(
     // $mail->addAttachment('intro.png');    // Optional name
 
     // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->isHTML(true);  // Set email format to HTML
     $mail->Subject = 'LEtter';
     $mail->Body    = "
       HEllo!!
+      $name
 ";
    
 
@@ -279,8 +280,12 @@ $mail->SMTPOptions = array(
     <div id="background__grey" class="container_background" style="display: none;">
       <div class=" container my__form">
         <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
-          <label>Name</label>
-          <input placeholder="Name" type="text" name="inputform"> 
+          <label>Заказать услугу</label>
+          <input placeholder="Ваше имя" type="text" name="inputform"> 
+          <input placeholder="Ваш телефон" type="text" name="inputform"> 
+          <label>Услуги</label>
+          <input type="checkbox" id="service1" name="subscribe" value="service"><label for="service1">Маникюр женский 120 грн</label>
+          <input type="checkbox" id="" name="subscribe" value="service">
           <input type="submit" name="buttonform" id="close__button">
         </form>
       </div>
