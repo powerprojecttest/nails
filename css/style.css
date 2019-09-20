@@ -178,3 +178,20 @@ p{
 .red__text{
     color: #F14A64;
 }
+
+
+
+.container_background{
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+}
+
+.my__form{
+    margin: 25%;
+    position: absolute;
+}

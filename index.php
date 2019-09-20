@@ -1,3 +1,134 @@
+<?php
+
+
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer.php';
+require 'SMTP.php';
+require 'Exception.php';
+
+
+
+
+
+
+$name=$_POST['inputform'];
+
+// Instantiation and passing true enables exceptions
+$mail = new PHPMailer;
+$mail->CharSet = 'UTF-8';
+
+
+    //Server settings
+    $mail->SMTPDebug = 3;    
+
+    $mail->isSMTP();   
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);                                         // Set mailer to use SMTP
+    
+    $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'admin@powersite.com.ua';                     // SMTP username
+    $mail->Password   = 'AueuR6GZw3';                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('admin@powersite.com.ua', 'Powersite');
+    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
+    $mail->addReplyTo('info@powerproject.com.ua', 'Information');
+
+    // Attachments
+    // $mail->addAttachment('intro.png');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'LEtter';
+    $mail->Body    = "
+      HEllo!!
+";
+   
+
+    $mail->send();
+    echo 'Message has been sent';
+
+?>
+
+
+
+
+
+
+
+
+<?php
+if(isset($_POST['buttonform'])){
+
+$name=$_POST['inputform'];
+
+//$email=$_POST['email2'];
+
+
+// Instantiation and passing true enables exceptions
+$mail = new PHPMailer;
+
+
+    //Server settings
+    $mail->SMTPDebug = 0;    
+
+    $mail->isSMTP();   
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);                                         // Set mailer to use SMTP
+    $mail->CharSet = 'UTF-8';
+    $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'admin@powersite.com.ua';                     // SMTP username
+    $mail->Password   = 'AueuR6GZw3';                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('admin@powersite.com.ua', 'Powersite');
+    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
+    $mail->addReplyTo('info@powerproject.com.ua', 'Information');
+
+    // Attachments
+    // $mail->addAttachment('intro.png');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'LEtter';
+    $mail->Body    = "
+      HEllo!!
+";
+   
+
+    $mail->send();
+    echo 'Message has been sent';
+}
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +172,7 @@
             <div class="text-md-left col-lg-2 col-md-2 col-sm-2 col-xs-12">
               <div class="header__content">
                 <div id='logo'><a  href="/"><img src="img/logo.png" alt="" height="" width=""></a></div>
-                <div class="button__mainpage"><p class="order">Заказать услугу</p></div>
+                <div class="button__mainpage" id="my__button-order"><p class="order">Заказать услугу</p></div>
               </div>
             </div>
           </div>
@@ -85,6 +216,7 @@
         </div>
       </div>
     </section>
+
     <section id="price">
         <div class="container">
           <div class="row price">
@@ -92,6 +224,9 @@
                   <div class="price__text">Прайс</div>
                 </div>
           </div>
+
+
+
 
 <div class="cont__price">
           <div class="row price">
@@ -160,14 +295,14 @@
           <div class="row price">      
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 manicure"><p>Снятие нарощенных ногтей.</p>
                   <p class="red__text">Удаление геля с натуральных ногтей</p></div>
-                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">от</div>
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right"><p>от</p></div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left"><p>90 грн</p></div>
           </div>
 
           <div class="row price">      
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 manicure"><p>Коррекция нарощенных ногтей.</p>
                   <p class="red__text">Коррекция нарощенных ногтей (гелевая система)</p></div>
-                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">от</div>
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right"><p>от</p></div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left"><p>400 грн</p></div>
           </div>
 
@@ -194,9 +329,24 @@
         </div>
       </div>
     </section>
+
     <section id="contacts"></section>
     <section id="footer"></section>
 
+    <iframe name="FormName" style="display: none;"></iframe>
+
+ 
+    <div id="background__grey" class="container_background" style="display: none;">
+      <div class=" container my__form">
+        <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
+          <label>Name</label>
+          <input placeholder="Name" type="text" name="inputform"> 
+          <input type="submit" name="buttonform" id="close__button">
+        </form>
+      </div>
+    </div> 
+
     <script src="js/script__portfolio.js"></script>
+    
   </body>
 </html>
