@@ -280,13 +280,127 @@ $mail->SMTPOptions = array(
     <div id="background__grey" class="container_background" style="display: none;">
       <div class=" container my__form">
         <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
-          <label>Заказать услугу</label>
-          <input placeholder="Ваше имя" type="text" name="inputform"> 
-          <input placeholder="Ваш телефон" type="text" name="inputform"> 
-          <label>Услуги</label>
-          <input type="checkbox" id="service1" name="subscribe" value="service"><label for="service1">Маникюр женский 120 грн</label>
-          <input type="checkbox" id="" name="subscribe" value="service">
-          <input type="submit" name="buttonform" id="close__button">
+          <div class="order__service"><label>Заказать услугу</label></div>
+          <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
+          <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="inputform"> </div>
+          <div class="services"><label>Услуги</label></div>
+
+          
+          
+  <div class="row row__services">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service1">
+          <label class="form-check-label" for="service1"><p class="manicure__form">Маникюр женский<p class="price__form"> 120 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service2">
+          <label class="form-check-label" for="service2"><p class="manicure__form">Маникюр европейский<p class="price__form"> 100 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service3">
+          <label class="form-check-label" for="service3"><p class="manicure__form">Гель-лак, френч, лунный.<p class="price__form"> 250 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service4">
+          <label class="form-check-label" for="service4"><p class="manicure__form">Дизайн ногтей(1шт)<p class="price__form"> 5-30 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service5">
+          <label class="form-check-label" for="service5"><p class="manicure__form">Ремонт ногтя(1шт)<p class="price__form"> 30 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service6">
+          <label class="form-check-label" for="service6"><p class="manicure__form">Снятие нарощенных<p class="price__form"> от 80 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service7">
+          <label class="form-check-label" for="service7"><p class="manicure__form">Spa-процедура<p class="price__form"> 80 грн</p></p></label>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <div class="row"> 
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="service1">
+            <label class="form-check-label" for="service1"><p class="manicure__form">Маникюр мужской<p class="price__form">150 грн</p></p></label>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service2">
+          <label class="form-check-label" for="service2"><p class="manicure__form">Покрытие гель-лак<p class="price__form"> 230 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service3">
+          <label class="form-check-label" for="service3"><p class="manicure__form">Снятие гель-лака <p class="price__form"> 50 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service4">
+          <label class="form-check-label" for="service4"><p class="manicure__form">Наращивание ногтей<p class="price__form"> от 700 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service5">
+          <label class="form-check-label" for="service5"><p class="manicure__form">Коррекция нарощенных<p class="price__form"> от 400 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service6">
+          <label class="form-check-label" for="service6"><p class="manicure__form">Педикюр женский<p class="price__form"> 170 грн</p></p></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="service7">
+          <label class="form-check-label" for="service7"><p class="manicure__form">Педикюр мужской<p class="price__form"> 250 грн</p></p></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+         
+ 
+          <input type="submit" name="buttonform" id="close__button" value="Записаться">
         </form>
       </div>
     </div> 
