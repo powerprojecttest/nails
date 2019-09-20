@@ -151,7 +151,7 @@ $mail->SMTPOptions = array(
       <div class="container">
         <div class="row .mb-100 about_inna">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="about__photo"><a  href="/"><img src="img/inna.png" alt="" ></a></div>
+            <div class="about__photo"></div>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
             <div class="about__text">Обо мне</div>

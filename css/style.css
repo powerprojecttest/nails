@@ -141,8 +141,10 @@ p{
     margin-bottom: 100px;
 }
 .about__photo{
-
+    background: url(/img/inna.png) no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 100%;
 }
 .about__text{
     background-image: -moz-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
