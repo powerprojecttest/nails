@@ -79,8 +79,18 @@ p{
 
 
 /*-------------------------PARTFOLIO--------------------------*/
+
+.outer__container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 50px;
+}
 #portfolio{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+  
+}
+.portfolio{
     background: #fcf4f8;
 }
 #line__portfolio{
@@ -103,6 +113,8 @@ p{
     padding-top: 30px;
     border-bottom: #F14A64 1px solid;
 }
+
+
 .owl-prev { 
     width: 15px; 
     height: 100px; 
@@ -125,8 +137,12 @@ p{
 .owl-nav { display: block !important; }
 
 /*-------------------------ABOUT--------------------------*/
+#about{
+    margin-bottom: 100px;
+}
 .about__photo{
-    padding-left: 0px;
+
+    width: 100%;
 }
 .about__text{
     background-image: -moz-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
@@ -136,6 +152,7 @@ p{
     color: #fff;
     text-align: left;
     height: 60px;
+    width: 100%;
    padding-top: 20px;
    padding-left: 40px;
    position: relative; 
@@ -147,6 +164,8 @@ p{
     left: 90%;
     z-index: 4;
 }
+
+
 .about__description{
     padding-left: 40px;
     letter-spacing: 0.3;
@@ -156,7 +175,7 @@ p{
 
 
 /*-------------------------PRICE--------------------------*/
-#price{
+.price{
     background: #fcf4f8;
 }
 .cont__price{
@@ -182,9 +201,107 @@ p{
 .red__text{
     color: #F14A64;
 }
+.float__malina_plus_briliant{
+    position: relative; 
+    top: -90px;
+    left: 85%;
+    z-index: 4;
+}
+/*-------------------------CONTACTS--------------------------*/
+
+.rowContacts{
+    display: flex;
+}
+.rowContactstwo{
+    display: flex;
+}
+#contacts{
+    margin-bottom: 100px;
+  
+}
+.contacts{
+    background: #fcf4f8;
+}
+#line__contacts{
+    background-image:url(../img/line__portfolio.png);
+    background-position: left bottom; /* Положение фона */
+    background-repeat: repeat-x; /* Повторяем фон по горизонтали */
+    height: 20px;
+    width: 100%;
+}
+.adress{
+    margin-left: 10px;
+}
+.adress__content{
+    margin-left: 20px;
+}
+.contacts__text{
+        font-size: 16px;
+        color: #F14A64;
+        text-transform: uppercase;
+        line-height: 1.5;
+        text-align: center;
+        height: 60px;
+       padding-top: 20px;
+}
+.contacts__line{
+    padding-top: 30px;
+    border-bottom: #F14A64 1px solid;
+}
+
+.our__adress{
+    background-image: -moz-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(175,23,43) 0%, rgb(228,127,145) 100%);
+    font-size: 16px;
+    text-transform : uppercase;
+    color: #fff;
+    padding: 10px 0 10px 20px;
+}
+.our__adress__text{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.our__adress__text a{
+    color: #000; /* Цвет ссылок */
+   }
+.our_social-links{
+    display: flex;
+}
+.title-contact{
+    font-size: 16px;
+    color: #F14A64;
+    font-weight: bolder;
+}
+.icon__footer{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.float_briliant{
+    position: relative; 
+    top: -90px;
+    left: 5%;
+    z-index: 4;
+}
+/*-------------------------FOOTER--------------------------*/
 
 
+.malinna__footer{
+    background-image:url(../img/line__footer.png);
+    background-position: left bottom; /* Положение фона */
+    background-repeat: repeat-x; /* Повторяем фон по горизонтали */
+    height: 40px;
+  }  
 
+
+.malinna__copyright{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 7px;
+  }
 /*-------------------------FORM--------------------------*/
 .container_background{
     background: rgba(255,255,255,0.9);

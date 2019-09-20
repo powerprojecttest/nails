@@ -71,7 +71,7 @@ $mail->SMTPOptions = array(
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,8 +86,13 @@ $mail->SMTPOptions = array(
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     
   </head>
@@ -122,18 +127,20 @@ $mail->SMTPOptions = array(
 
   <section id="portfolio">
     <div class="container portfolio">
-      <div class="row  .mb-100">
+      <div class="row  ">
 
           <div id="line__portfolio"></div>
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><div class="portfolio__line"></div></div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="portfolio__text">Портфолио</div></div>
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><div class="portfolio__line"></div></div>
-          
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 "><div class="portfolio__line"></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><div class="portfolio__text">Портфолио</div></div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 "><div class="portfolio__line"></div></div>
 
           
-          <div class="owl-carousel owl-theme">
-              <div><img src="img/nail1.png" alt=""></div>
-              <div><img src="img/logo.png" alt=""></div>
+          <div class="outer__container">
+            <div class="owl-carousel owl-theme">
+
+            <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" alt=""></a></div></div>
+            <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/logo.png"><img src="img/logo.png" alt=""></a></div></div>
+            </div>
           </div>
       </div>
     </div>
@@ -142,9 +149,9 @@ $mail->SMTPOptions = array(
 
     <section id="about">
       <div class="container">
-        <div class="row about_inna">
+        <div class="row .mb-100 about_inna">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="about__photo"><a  href="/"><img src="img/inna.png" alt="" height="470" width="350"></a></div>
+            <div class="about__photo"><a  href="/"><img src="img/inna.png" alt="" ></a></div>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
             <div class="about__text">Обо мне</div>
@@ -159,8 +166,8 @@ $mail->SMTPOptions = array(
     </section>
 
     <section id="price">
-        <div class="container">
-          <div class="row price">
+        <div class="container price">
+          <div class="row ">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="price__text">Прайс</div>
                 </div>
@@ -169,7 +176,7 @@ $mail->SMTPOptions = array(
 
 
 
-<div class="cont__price">
+<div class="cont__price mb-100">
           <div class="row price">
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 manicure"><p>Маникюр гигиенический, женский.</p>
                   <p class="red__text">Обрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
@@ -269,11 +276,48 @@ $mail->SMTPOptions = array(
           </div>
         </div>
       </div>
+    <div class="float__malina_plus_briliant"><img src="img/malina_plus_briliant.png" alt="" height="" width=""></div>
     </section>
 
-    <section id="contacts"></section>
-    <section id="footer"></section>
+    <section id="contacts"> 
+      <div class="container contacts">
+      <div class="row .mb-100">
+        <div id="line__contacts"></div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 "><div class="contacts__line"></div></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><div class="contacts__text">Контакты</div></div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 "><div class="contacts__line"></div></div>
+      </div>
 
+      <div class="rowContactstwo">
+        <div id="map" class="col-md-8 map"></div>
+        <div class="col-md-4 adress">
+          <p class="our__adress">Наш адрес</p>
+          <div class="adress__content" >
+            <p class="our__adress__text"> ЖК "София" <br> ул. Л. Украинки, 6 <br> (вход с ул. И. Франка)</p>
+            <p class="title-contact"> Телефон </p>
+            <p class="our__adress__text"><a href="tel:0963235000" >096-323-50-00</a></p>
+            <div class="our_social-links"><p class="title-contact"> Мы в соцсетях:</p>
+            <img src="img/insta.png" alt="" class="icon__footer"><a href="https://www.instagram.com/malinnastudio/" target="_blank"></a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="float_briliant"><img src="img/briliant.png" alt="" height="" width=""></div>
+    </section>
+<!--*************************FOOTER************************************-->
+    <footer class="probootstrap-footer malinna__footer">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="malinna__copyright"><p>Copyright © 2019. Malinna. All rights reserved</p></div>
+            </div>
+        </div>
+      </footer>
+
+
+
+    
+<!--*********************************FORM********************************-->
     <iframe name="FormName" style="display: none;"></iframe>
 
  
@@ -395,17 +439,69 @@ $mail->SMTPOptions = array(
     </div>
   </div>
 
-
-
-
-         
- 
           <input type="submit" name="buttonform" id="close__button" value="Записаться">
         </form>
       </div>
     </div> 
-
+    
+<!--*********************************FORM********************************-->
     <script src="js/script__portfolio.js"></script>
+
+
+    <script type="text/javascript">
+$(document).ready(function() {
+    $("a.fancybox").fancybox();
+});
+</script>
+
+
+    <!-- Google Maps-->
+<script>
+    function initMap() {
+        var myLatLng = {lat: 50.400872, lng: 30.375282};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            draggable: $(window).width() > 640,
+            center: myLatLng,
+            scrollwheel: false,
+        });
+
+        var contentString = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h1 id="firstHeading" class="firstHeading">Malinna</h1>' +
+            '<div id="bodyContent">' +
+            '<p> ЖК "София"<br> ' +
+            'ул. Л. Украинки,6'+
+            '</div>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        var image = 'img/raspberries-small.png';
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Malinna',
+            icon: image
+        });
+        var ww = $(window).width();
+        if (ww > 991) {
+            infowindow.open(map, marker);
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        } else {
+            infowindow.close();
+        }
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdXm6GX3_UccW4Fgq2SgvaHg4eHWJcbw0&callback=initMap">
+</script>
     
   </body>
 </html>
