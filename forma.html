@@ -33,16 +33,17 @@
 <body>
 
 <!--*********************************FORM********************************-->
-  <div class=" container  ">
+<div class=" container">
       <div class="my__form">
     <form id="my__form" method="POST" action="" target="FormName">
       <div class="order__service order__main_text"><label>Заказать услугу</label></div>
       <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
       <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="inputform"> </div>
       <div class="services order__main_text"><label>Услуги</label></div> 
-<div class="row row__services">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 
+<section>
+<div class="row row__services">
+  <div class="col-sm-6">
   <div class="row one__coll">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="service1">
@@ -99,7 +100,7 @@
 
 
 
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+<div class="col-sm-6">
   <div class="row second__coll"> 
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="service1">
@@ -149,9 +150,17 @@
     </div>
   </div>
 </div>
+</section>
+<section>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="btn__submit">
       <input type="submit" name="buttonform" id="close__button" value="Записаться">
-    </form>
+    </div>
   </div>
+</div>
+</section>
+</form>
 </div>
 </div>
 <!--*********************************FORM********************************-->

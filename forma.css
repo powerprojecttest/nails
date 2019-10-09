@@ -1,3 +1,7 @@
+.container{
+    
+}
+
 /*-------------------------FORM--------------------------*/
 .one__coll{
     width: 790px;
@@ -83,6 +87,7 @@
     left: 47%;
     transform: translate(-50%);
     top: 45%;
+    margin-top: 20px;
 
     background: linear-gradient(to right, #F75368 0%, #f8b3b5 50%, #F75368 50%, #f8b3b5 100%);
     background-size: 200% 100%;
@@ -98,4 +103,6 @@
         border: 1px solid #F75368;
         border-radius: 10px;
         width: 900px;
+
     }
+    
