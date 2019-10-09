@@ -147,11 +147,29 @@ margin-bottom: 50px;
 
 height:100%;
 }
-
+.price__row{
+    padding-bottom: 20px;
+}
 #price{
+    width: 150px;
+    margin: auto;
+    position: relative;
+}
+
+#price p{
 margin-bottom:0px;
 position: relative; 
-z-index: 2; 
+z-index: 2;
+text-align: center;
+font-family: 'Marck Script', cursive;
+font-size: 36px;
+}
+.pink__line{
+    height: 1px;
+    width: 100%;
+    background: #F14A64;
+    position: absolute;
+    bottom: 2px;
 }
 .mastera-col{
     padding-bottom: 100px;
