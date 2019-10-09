@@ -1,7 +1,9 @@
 body{
     overflow-x: hidden ;
 }
-
+.container{
+    padding-top: 20px;
+}
 #navbarToggleExternalContent{
 z-index:100;
 position:absolute !important;
@@ -75,9 +77,6 @@ height:320px;
 }
 
 
-.first__container{
-    margin-top: 40px;
-}
 .logo__malinna{ 
     padding-left: 45px;
 }
@@ -89,13 +88,48 @@ height:320px;
     padding-bottom: 10px;
     font-family: myriad-pro, sans-serif;
     font-size: 24px;
+    text-align: center;
 
 }
 .about__us{
-    padding: 20px 0 0 0;
+    width: 150px;
+    margin: auto;
+    position: relative;
+}
+.contacts{
+    width: 170px;
+    margin: auto;
+    position: relative;
+}
+.contacts p{
+    margin-bottom:0px;
     position: relative; 
-    z-index: 2; 
-    
+    z-index: 2;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 36px;
+    }
+.photo__nails{
+    width: 200px;
+    margin: auto;
+    position: relative;
+}
+.photo__nails p{
+    margin-bottom:0px;
+    position: relative; 
+    z-index: 2;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 36px;
+    }
+
+.about__us p{
+margin-bottom:0px;
+position: relative; 
+z-index: 2;
+text-align: center;
+font-family: 'Marck Script', cursive;
+font-size: 36px;
 }
 .button__more{
     margin-top: 20px;
@@ -134,17 +168,26 @@ font-family: myriad-pro, sans-serif;
     margin-top:50px;
     background:#575757;
 }
+#inst h3{
+    font-size: 36px;
+}
 #inst{
-margin-top:30px;
 margin-bottom:10px;
 position: relative;
 z-index: 2;
+text-align: center;
+padding-top: 20px;
+}
+
+.line__price, .line__photo, .line__contacts{
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 #n-mast{
 margin-bottom: 50px;
 }
 #rw_photos{
-
+padding-bottom: 20px;
 height:100%;
 }
 .price__row{
@@ -178,16 +221,14 @@ section{
 margin-bottom:50px;
 }
 
-#about{
+.about{
 background:#f2f2f2;
-margin-bottom:50px !important;
+}
+.text__about_us{
+    padding: 10px 30px;
 }
 #insta{
     background:#f2f2f2;
-
-}
-.our__insta{
-    margin-bottom: 0px;
 
 }
 .row__btn{
@@ -207,9 +248,7 @@ background: white;
   height: auto;
   width: auto;
 }
-.portfolio{
-    margin-top: 30px;
-}
+
 .navbar{
 position:absolute;
 top:0px;
@@ -491,8 +530,6 @@ width:220px;
 position: absolute;
 left: 50%;
 transform: translate(-50%);
-margin-top:50px; 
-
 background: linear-gradient(to right, #F75368 0%, #f8b3b5 50%, #F75368 50%, #f8b3b5 100%);
 background-size: 200% 100%;
 background-position: 100% 0;
@@ -555,7 +592,7 @@ transition: background-position 0.3s;
 
 
 #cont-button{
-height:100px;
+height:25px;
 }
 
 .navbar-static-top{
@@ -631,4 +668,7 @@ height:40px;
 .price__fornails{
     border: 1px solid #F14A64;
     border-radius: 10px;
+}
+.section__none_padding{
+    margin-bottom: 0px;
 }
