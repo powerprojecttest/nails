@@ -32,231 +32,214 @@
     
   </head>
 <body>
-<section >
-  <div class="container-fluid first__container">
-    <div class="container ">
+    <div class="container">
+        <section>
+          <div class="row">
+            <div class="col-sm-4" id="fon_1">
+              <div class="pos-f-t">
+                <div class="collapsed1">
+                  <div class="collapse in width" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                      <br><h4 class="text-white">Меню</h4><br>
+                        <span class="text-muted" id="menu1">О нас</span><br>
+                        <span class="text-muted" id="menu2">Прайс</span><br>
+                        <span class="text-muted" id="menu3">Фото работ</span><br>
+                        <span class="text-muted" id="menu4">Контакты</span><br>
+                    </div>
+                  </div>
+                </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+              </div>
+            </div>
+      
+      <script>
+      $('#menu1').click( function (e){
+      e.preventDefault()
+          $('html, body').animate({
+              scrollTop: $("#menu1_child").offset().top
+          }, 1000);
+      
+      });
+      
+      $('#menu2').click( function (e){
+      e.preventDefault()
+          $('html, body').animate({
+              scrollTop: $("#menu2_child").offset().top
+          }, 1000);
+      
+      });
+      
+      $('#menu3').click( function (e){
+      e.preventDefault()
+          $('html, body').animate({
+              scrollTop: $("#menu3_child").offset().top
+          }, 1000);
+      
+      });
+      
+      $('#menu4').click( function (e){
+      e.preventDefault()
+          $('html, body').animate({
+              scrollTop: $("#menu4_child").offset().top
+          }, 1000);
+      
+      });
+      </script>
+              <div class="col-sm-4" id="heder-col">
+                  <img class="logo__malinna" src="img/malinna_text_logo.png" alt="">
+                  <p class="studio__nails">Студия ногтевого сервиса</p>
+              </div>
+      
+              <div class="col-sm-4">
+                <div id="logo-col">
+                    <img class="logo__malina_manicure" src="img/logo1.png" alt="">
+                    <p class="sweet__manicure1">Ваш маникюр</p> 
+                    <p class="sweet__manicure2">со вкусом!</p>
+                </div>
+              </div>
+      
+            </div>
+      
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="fon_1">
-    <div class="pos-f-t">
-      <div class="collapsed1">
-        <div class="collapse in width" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <br><h4 class="text-white">Меню</h4><br>
-        <span class="text-muted" id="menu1">О нас</span><br>
-	<span class="text-muted" id="menu2">Прайс</span><br>
-	<span class="text-muted" id="menu3">Фото работ</span><br>
-	<span class="text-muted" id="menu4">Контакты</span><br>
+      <div class="col-sm-12 call__me">
+        <h4>+38 (096) 323 5000</h4>
       </div>
     </div>
-  </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-  </div>
-  </div>
-
-<script>
-$('#menu1').click( function (e){
-e.preventDefault()
-    $('html, body').animate({
-        scrollTop: $("#menu1_child").offset().top
-    }, 1000);
-
-});
-
-$('#menu2').click( function (e){
-e.preventDefault()
-    $('html, body').animate({
-        scrollTop: $("#menu2_child").offset().top
-    }, 1000);
-
-});
-
-$('#menu3').click( function (e){
-e.preventDefault()
-    $('html, body').animate({
-        scrollTop: $("#menu3_child").offset().top
-    }, 1000);
-
-});
-
-$('#menu4').click( function (e){
-e.preventDefault()
-    $('html, body').animate({
-        scrollTop: $("#menu4_child").offset().top
-    }, 1000);
-
-});
-</script>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="heder-col">
-          <img class="logo__malinna" src="img/malinna_text_logo.png" alt="">
-          <p class="studio__nails">Студия ногтевого сервиса</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >
-        <div id="logo-col">
-            <img class="logo__malina_manicure" src="img/logo1.png" alt="">
-            <p class="sweet__manicure1">Ваш маникюр</p> 
-            <p class="sweet__manicure2">со вкусом!</p>
-        </div>
-      </div>
-      </div>
-  </div>
-  </div>
-
-    <div class="container-fluid">
-      <div class="container ">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subheder-col call__me">
-          <h4>+38 (096) 323 5000</h4>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  subheder-col" id="btn-main">
-            <a class="click-me" href="forma.html"><button class='button__order'>Записаться</button></a>
-        </div>
-      </div>
+      
+    <div class="row">
+      <div class="col-sm-12" id="btn-main">
+        <a class="click-me" href="forma.html"><button class='button__order'>Записаться</button></a>
     </div>
   </div>
-</div>
-</div>
 </section>
 
-<div class="container-fluid" id="menu3_child">
-        <div class="container portfolio">
-      <div class="row">
-         <div class="col subheder-col">
-      <h3>Фото работ</h3>
-      <div class="linephoto"><img  src="img/line.jpg" alt=""></div>
+ 
+<section>
+
+    <div  id="menu3_child" class="row line__photo">
+      <div class="col-sm-12">
+        <div class="photo__nails"><p>Фото работ</p>
+          <div class="pink__line"></div>  
+        </div>       
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-4"> 
+        <img class="photo" src="img/nails_page/1.jpg" alt="">
+      </div>
+      <div class="col-sm-4"> 
+        <img class="photo" src="img/nails_page/2.jpg" alt="">
+      </div>
+      <div class="col-sm-4"> 
+        <img class="photo" src="img/nails_page/4.jpg" alt="">
+      </div>
     </div>
 
-
-
-
-    <div class="container ">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
-                <img class="photo" src="img/nails_page/1.jpg" alt="">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
-                <img class="photo" src="img/nails_page/2.jpg" alt="">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/4.jpg" alt="">
             </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
-                <img class="photo" src="img/nails_page/4.jpg" alt="">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/6.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/7.jpg" alt="">
             </div>
-           
-        </div>
+          </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/8.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/9.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/10.jpg" alt="">
              </div>
-           
-        </div>
-
+            </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/11.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/12.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/13.jpg" alt="">
             </div>   
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/14.jpg" alt="">
              </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/15.jpg" alt="">
             </div>
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+             <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/16.jpg" alt="">
             </div>   
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                  <img class="photo" src="img/nails_page/17.jpg" alt="">
             </div>
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+             <div class="col-sm-4"> 
                  <img class="photo" src="img/nails_page/18.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+            <div class="col-sm-4"> 
                 <img class="photo" src="img/nails_page/19.jpg" alt="">
             </div>   
         </div>
 
-    </div>
-
-
-<section class="our__insta">
-    <div class="container-fluid" >
-        <div class="container " id="insta">
-            <div class="row">
-                <div class="col subheder-col" id="inst">
-                    <h3>Подпишись на нас в инстаграм<a href="https://www.instagram.com/malinnastudio/" target="_blank"><img class="subscribe__icon" src="img/insta__icon_big.png" alt=""></a></h3>
-                </div>
-            </div>
-            
-            <div class="row row__btn">
-                <div class="col subheder-col" id="btn-main4">
-                    <a href="https://www.instagram.com/malinnastudio/" target="_blank"><button class='btn btn-outline-primary button__subscribe'>подписаться</button></a> 
-                </div> 
-            </div>
-         </div>
-    </div>      
 </section>
 
 
-
-
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  subheder-col" id="btn-main3">
-            <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
+<section class="section__none_padding">
+    <div id="insta">
+      <div class="row">
+        <div class="col-sm-12" id="inst">
+          <h3>Подпишись на нас в инстаграм <a href="https://www.instagram.com/malinnastudio/" target="_blank"><img class="subscribe__icon" src="img/insta__icon_big.png" alt=""></a></h3>
         </div>
-        </div>
-    </div>    
-
-<footer class="probootstrap-footer malinna__footer">
-    <div class="container-fluid" id="inst-cont__footer">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="malinna__copyright"><p>© Студия ногтевого сервися “Малинна”. 2019. Все права защищены</p></div>
-                </div>
-            </div>
-        </div>
+      </div>
+  
+      <div class="row row__btn">
+        <div class="col-sm-12 " id="btn-main4">
+          <a href="https://www.instagram.com/malinnastudio/" target="_blank"><button class='btn btn-outline-primary button__subscribe'>подписаться</button></a> 
+        </div> 
+      </div>
     </div>
-</footer>   
+  </section>
+
+
+  <div class="row">
+    <div class="col-sm-12" id="btn-main3">
+      <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
+    </div>
+  </div>
+
+    
+</section>   
+</div>
+
+    <footer class="probootstrap-footer malinna__footer">
+        <div class="container-fluid" id="inst-cont__footer">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="malinna__copyright"><p>© Студия ногтевого сервися “Малинна”. 2019. Все права защищены</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> 
  
 <script>
         document.addEventListener('DOMContentLoaded',function(event){
