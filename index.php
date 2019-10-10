@@ -10,7 +10,7 @@ require 'PHPMailer.php';
 require 'SMTP.php';
 require 'Exception.php';
 
-
+error_log("Form request", 0);
 if(isset($_POST['buttonform'])){
   error_log("Form request",0);
   $name=$_POST['inputform'];
