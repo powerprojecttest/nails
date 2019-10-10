@@ -52,22 +52,9 @@ width: 20px;
 height: 27px;
 border-style: solid;
 border-width: 13.5px 20px 13.5px 0;
+padding-left: 10px;
 transition: .5s;
 border-color: transparent #000000 transparent transparent;
-}
-
-.arrow_right{
-width: 20px;
-height: 27px;
-border-style: solid;
-border-width: 13.5px 0 13.5px 20px;
-transition: 5s;
-border-color: transparent transparent transparent #000000;
-
-}
-
-.arrow_right:hover{
-    border-color:  #d75468;
 }
 .owl-prev { 
     width: 50px; 
@@ -81,13 +68,6 @@ border-color: transparent transparent transparent #000000;
     opacity: 1;
     transition: .5s
 } 
-.owl-prev:hover{
-    background: #ffe7e7 !important;
-}
-.owl-prev:hover .arrow_left{
-    border-color: transparent #d45467 transparent transparent;
-}
-
 .owl-next { 
     width: 50px; 
     height: 70px; 
@@ -96,9 +76,38 @@ border-color: transparent transparent transparent #000000;
     right: 15px; 
     display: block !important; 
     border:0px solid black; 
-    background: rgb(199, 199, 199) !important;
+    background: #f7f7f7  !important;
     opacity: 1;	
+    transition: .5s;
 } 
+.owl-prev:hover{
+    background: #ffe7e7 !important;
+}
+.owl-next:hover{
+    background: #ffe7e7 !important;
+}
+
+.owl-prev:hover .arrow_left{
+    border-color: transparent #d45467 transparent transparent;
+}
+.owl-next:hover .arrow_right{
+    border-color: transparent #d45467 transparent transparent;
+}
+.arrow_right{
+width: 20px;
+height: 27px;
+border-style: solid;
+border-width: 13.5px 0 13.5px 20px;
+padding-left: 10px;
+transition: 5s;
+border-color: transparent transparent transparent #000000;
+
+}
+.arrow_right:hover{
+    border-color:  #d75468;
+}
+
+
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 .owl-nav { display: block !important; }
 .fa-angle-left{
