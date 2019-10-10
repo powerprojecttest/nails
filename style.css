@@ -10,19 +10,20 @@ position:absolute !important;
 }
 /*MENU*/
 .text-white {
-    color: #1b1a1a!important;
+    color: #f2f2f2 !important;
     margin-top: -45px;
     padding-left: 13px;
     font-family: 'Marck Script', cursive;
 }
 .text-muted {
-    color: #F14A64 !important;
+    color: #f2f2f2 !important;
     font-family: myriad-pro, sans-serif;
     padding-left: 13px;
     font-size: 14px;
 }
 .bg-dark {
-background:#f2f2f2 !important;
+background:#F14A64 !important;
+
 }
 /*MENU*/
 .sweet__manicure2{
