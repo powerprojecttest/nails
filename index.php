@@ -119,9 +119,9 @@ $mail->SMTPOptions = array(
       </div>
 
 <script>
-    $('html, body').animate({
-        scrollTop: $("body").offset().top
-    }, 500);
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
 
 $('#menu1').click( function (e){
 e.preventDefault()
