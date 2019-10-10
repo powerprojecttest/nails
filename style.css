@@ -76,7 +76,7 @@ border-color: transparent #000000 transparent transparent;
     border:0px solid black; 
     background: #f7f7f7 !important;
     opacity: 1;
-    transition: .5s
+    transition: .5s;
 } 
 .owl-next { 
     width: 50px; 
