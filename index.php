@@ -21,7 +21,7 @@ if(isset($_POST['buttonform'])){
 
 
   //Server settings
-  $mail->SMTPDebug = 0;    
+  $mail->SMTPDebug = 2;    
 
   $mail->isSMTP();   
   $mail->SMTPOptions = array(
@@ -366,7 +366,7 @@ e.preventDefault()
 <div id="background__grey" class="container_background" style="display: none;">
 <div class=" container">
       <div class="my__form">
-    <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
+    <form id="my__form" method="POST" action="" target="" style="display: none;">
       <div class="order__service order__main_text"><label>Заказать услугу</label></div>
       <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
       <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="input_name_form"> </div>
