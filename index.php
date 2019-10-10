@@ -506,7 +506,7 @@ e.preventDefault()
 <div id="background__grey" class="container_background" style="display: none;">
   <div class=" container">
     <div class="form__thank">
-      <form id="form__thank" method="POST" action="" target="FormName" style="display: none;">
+      <form id="form__thank" method="POST" action="" target="FormName"> 
       <label for="text__label">Спасибо за запись! Мы сегодня свяжемся с Вами!</label>
       </form>
     </div>
