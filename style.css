@@ -17,12 +17,13 @@ position:absolute !important;
 }
 .text-muted {
     color: #f2f2f2 !important;
-    font-family: myriad-pro, sans-serif;
+    font-family: 'Marck Script', cursive;
     padding-left: 13px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .text-muted:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 .bg-dark {
 background:#F14A64 !important;
