@@ -23,12 +23,12 @@ $("#close__button").click(function(){
 
 /*-----------------SHOW__PRICE------------------*/ 
 $("#next__nails").click(function(){
-    $("#background__grey").show();
+    $("#background__grey1").show();
     $("#my__price").show();
 });
 
-$("#background__grey").click(function(){
-    $("#background__grey").hide();
+$("#background__grey1").click(function(){
+    $("#background__grey1").hide();
     $("#my__price").hide();
 });
 
