@@ -255,7 +255,7 @@ e.preventDefault()
 
     <div class="row">  
       <div class="col subheder-col" id="btn-main2">
-        <a class="click-me" href="price.html"><button class='btn btn-outline-primary button__more-price' id="show">Подробный прайс</button></a>
+        <button class='btn btn-outline-primary button__more-price' id="next__nails">Подробный прайс</button>
       </div>
     </div>
   </div>
@@ -492,6 +492,122 @@ e.preventDefault()
 </div>
 <!--*********************************FORM********************************-->
 
+
+
+<!------------------------------------PRICE-------------------------------------->
+
+<div class="container-fluid " id="menu2_child">
+    <div class="row price price__row">
+        <div class="offset-sm-1 col-sm-10">
+            <div id="price"><p>Прайс</p>
+            <div class="pink__line"></div>  
+            </div>       
+        </div>
+    </div>
+    <div class="row price">
+        <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр гигиенический, женский.</p>
+            <p class="red__text">Обрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
+        <div class="col-sm-1 text-right"></div>
+        <div class="col-sm-1 text-left"><p>120 грн</p></div>
+    </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр гигиенический, мужской.</p>
+                        <p class="red__text">Обрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>150 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр европейский.</p>
+                        <p class="red__text">Необрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>80 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Покрытие ногтей (гель-лак).</p>
+                        <p class="red__text">Подготовка ногтевой пластины к нанесению гель-лака и покрытие</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>230 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-9 manicure"><p>Покрытие ногтей гель-лак френч, лунный.</p>
+                        <p class="red__text">Подготовка ногтевой пластины к нанесению гель-лака и покрытие в стиле френч </p></div>
+                    <div class="col-sm-1 text-left"><p>250 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Снятие гель-лака.</p>
+                        <p class="red__text">Снятие покрытия с ногтевой пластины посредством профессиональной жидкости</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>50 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Дизайн ногтей (1 ноготь). </p>
+                        <p class="red__text">Дизайн, роспись и декорирование ногтей </p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>5-30 грн</p></div>
+                </div>
+        
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Ремонт ногтей (1 ноготь).</p>
+                        <p class="red__text">Удаление трещин, надломов и сколов ногтя</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>30 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Наращивание ногтей. </p>
+                        <p class="red__text">Наращивание ногтей на форму (гелевая основа)</p></div>
+                    <div class="col-sm-1 text-right"><p>от</p></div>
+                    <div class="col-sm-1 text-left"><p>700 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Снятие нарощенных ногтей.</p>
+                        <p class="red__text">Удаление геля с натуральных ногтей</p></div>
+                    <div class="col-sm-1 text-right"><p>от</p></div>
+                    <div class="col-sm-1 text-left"><p>90 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Коррекция нарощенных ногтей.</p>
+                        <p class="red__text">Коррекция нарощенных ногтей (гелевая система)</p></div>
+                    <div class="col-sm-1 text-right"><p>от</p></div>
+                    <div class="col-sm-1 text-left"><p>400 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Spa-процедура для рук.</p>
+                        <p class="red__text">Spa-уход включает: пиллинг, маску и крем для рук</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>90 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Педикюр гигиенический, женский. </p>
+                        <p class="red__text">Обрезной педикюр с ванночкой и полированием подошвы</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>170 грн</p></div>
+                </div>
+        
+                <div class="row price">      
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Педикюр гигиенический, мужской. </p>
+                        <p class="red__text">Обрезной педикюр с ванночкой и полированием подошвы</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                <div class="col-sm-1 text-left"><p>250 грн</p></div>
+            </div>
+    <div class="row price">
+        <div class="offset-sm-1 col-sm-10 subheder-col" id="btn-main3">
+            <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
+        </div>
+    </div>
+</div>
+<!------------------------------------PRICE-------------------------------------->
+
 <script src="script__order.js"></script> 
 <script>
 document.addEventListener('DOMContentLoaded',function(event){
@@ -590,6 +706,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 $(window).scroll(function(){ 
 $('#navbarToggleExternalContent').removeClass('show');
 $('#navbarToggleExternalContent').addClass('hide');
+
 });
 </script>
 
@@ -629,8 +746,8 @@ $('.accordion').click(function(){
 	$(this).hide();
 	$('.expanded').show();          
         $('.panel').each( function (i){
-	    $(this).css({display:"block",height: "0"});
-            $(this).animate({height: "100%"},1000);
+	    $(this).css({height: "0"});
+            $(this).animate({display:"block", height: "100%"},1000);
 	    
 });          
 });
