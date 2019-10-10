@@ -21,6 +21,9 @@ position:absolute !important;
     padding-left: 13px;
     font-size: 14px;
 }
+.text-muted:hover{
+    cursor: pointer;
+}
 .bg-dark {
 background:#F14A64 !important;
 
