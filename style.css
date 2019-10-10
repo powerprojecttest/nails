@@ -16,9 +16,13 @@ position:absolute !important;
     font-family: 'Marck Script', cursive;
 }
 .text-muted {
-    color: #F14A64;!important;
+    color: #F14A64 !important;
     font-family: myriad-pro, sans-serif;
     padding-left: 13px;
+    font-size: 14px;
+}
+.bg-dark {
+background:#f2f2f2 !important;
 }
 /*MENU*/
 .sweet__manicure2{
