@@ -81,7 +81,7 @@ border-color: transparent transparent transparent #000000;
     opacity: 0.3;
 } 
 .owl-prev:hover{
-    background: red!important;
+    background: yellow !important;
 }
 .owl-next { 
     width: 50px; 
