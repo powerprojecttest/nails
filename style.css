@@ -63,7 +63,7 @@ border-color: transparent #000000 transparent transparent;
     border-width: 13.5px 0 13.5px 20px;
     padding-left: 10px;
     transition: .5s;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent transparent transparent #000000;
     
     }
 .owl-prev { 
