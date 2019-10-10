@@ -703,6 +703,8 @@ document.addEventListener('DOMContentLoaded',function(event){
 });
 </script>
 <script>
+
+document.location.reload(true);
 $(window).scroll(function(){ 
 $('#navbarToggleExternalContent').removeClass('show');
 $('#navbarToggleExternalContent').addClass('hide');
