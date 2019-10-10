@@ -80,10 +80,10 @@ border-color: transparent transparent transparent #000000;
     display: block !important; 
     border:0px solid black; 
     background: rgb(199, 199, 199) !important;
-    opacity: 0.3;
+    opacity: 1;
 } 
 .owl-prev:hover{
-    background: yellow !important;
+    background: #d75467 !important;
 }
 .owl-next { 
     width: 50px; 
