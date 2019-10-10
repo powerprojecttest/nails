@@ -13,6 +13,7 @@ require 'Exception.php';
 if(isset($_POST['buttonform'])){
 
 $name=$_POST['inputform'];
+$tell=$_POST['input_name_form'];
 
 //$email=$_POST['email2'];
 // Instantiation and passing true enables exceptions
@@ -48,10 +49,12 @@ $mail->SMTPOptions = array(
 
     // Content
     $mail->isHTML(true);  // Set email format to HTML
-    $mail->Subject = 'LEtter';
+    $mail->Subject = 'Новая запись на маникюр!';
     $mail->Body    = "
-      HEllo!!
+      Здравствуйте, меня зовут - 
       $name
+      Мой номер
+      $tell
 ";
    
 
@@ -370,7 +373,7 @@ e.preventDefault()
     <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
       <div class="order__service order__main_text"><label>Заказать услугу</label></div>
       <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
-      <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="inputform"> </div>
+      <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="input_name_form"> </div>
       <div class="services order__main_text"><label>Услуги</label></div> 
 
 <section>
@@ -497,9 +500,14 @@ e.preventDefault()
 </div>
 </div>
 <!--*********************************FORM********************************-->
+<!--*********************************FORM_CALL_YOU********************************-->
+<iframe name="FormName" style="display: none;"></iframe>
+<div id="background__grey" class="container_background" style="display: none;">
+<div class=" container">
+      <div class="my__form">
+    <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
 
-
-
+<!--*********************************FORM_CALL_YOU********************************-->
 <!------------------------------------PRICE-------------------------------------->
 <iframe name="FormName" style="display: none;"></iframe>
 <div id="background__grey" class="container_background" style="display: none;">
