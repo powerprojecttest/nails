@@ -63,7 +63,12 @@ border-width: 13.5px 0 13.5px 20px;
 border-color: transparent transparent transparent #000000;
 
 }
-
+.arrow_left:hover{
+    border-color: transparent transparent transparent #d75468;
+}
+.arrow_right:hover{
+    border-color: transparent transparent transparent #d75468;
+}
 .owl-prev { 
     width: 50px; 
     height: 70px; 
