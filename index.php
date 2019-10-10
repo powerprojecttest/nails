@@ -749,6 +749,7 @@ $('.owl-nav').removeClass('disabled');
 <script>
 
 $('.expanded').hide(); 
+$('.panel').css({ height: "0%"});
 $('.accordion').click(function(){  
 	$(this).hide();
 	$('.expanded').show();          
