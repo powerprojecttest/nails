@@ -26,6 +26,7 @@ position:absolute !important;
 }
 .bg-dark {
 background:#F14A64 !important;
+border-radius: 2px;
 
 }
 /*MENU*/
