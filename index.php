@@ -746,7 +746,8 @@ $('.accordion').click(function(){
 	$(this).hide();
 	$('.expanded').show();          
         $('.panel').each( function (i){
-            $(this).animate({display:"block", height: "100%"},1000);
+           $(this).show();
+            $(this).animate({ height: "100%"},1000);
 	    
 });          
 });
