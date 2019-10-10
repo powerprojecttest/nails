@@ -173,7 +173,7 @@ e.preventDefault()
 
       <div class="row">
         <div class="col-sm-12" id="btn-main">
-         <button class='button__order'>Записаться</button>
+         <button class='my__button-order'>Записаться</button>
         </div>
     </div>
   </section>
