@@ -212,10 +212,10 @@ e.preventDefault()
 
     <div class="row">
       <div class="col" id="btn-main1">
-           <input class='btn btn-outline-primary button__more accordion ' value="Подробнее">
+           <button class='btn btn-outline-primary button__more accordion '>Подробнее</button>
       </div>
 	    <div class="col" id="btn-main1">
-           <input class='btn btn-outline-primary button__more expanded ' value="Скрыть">
+           <button class='btn btn-outline-primary button__more expanded '>Скрыть</button>
       </div>
     </div>
   
