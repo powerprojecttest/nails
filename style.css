@@ -616,19 +616,10 @@ transition: background-position 0.3s;
     background-position:0 0;
     cursor: pointer;
 }
-
-
-.rollover_left{
-    background: url(img/arrow_left.png); /* Путь к файлу с исходным рисунком  */
-    display: block; /*  Рисунок как блочный элемент */
-    width: 40px; /* Ширина рисунка */
-    height: 40px; /*  Высота рисунка */
+.arrow__left:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
-.rollover_left:hover{
-    background: url(img/arrow_right.png); 
-}
-
-
 #cont-button{
 height:25px;
 }
