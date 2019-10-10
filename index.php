@@ -281,7 +281,7 @@ e.preventDefault()
 
   <div class="outer__container">   
     <div class="owl-carousel owl-theme">
-      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" alt=""></a></div></div>
+      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" alt="" style="width:100px;"></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail2.png"><img src="img/nail2.png" alt=""></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail3.png"><img src="img/nail3.png" alt=""></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail4.png"><img src="img/nail4.png" alt=""></a></div></div>
