@@ -10,8 +10,9 @@ require 'PHPMailer.php';
 require 'SMTP.php';
 require 'Exception.php';
 
-if(isset($_POST['buttonform'])){
 
+if(isset($_POST['buttonform'])){
+  error_log("Form request",0);
   $name=$_POST['inputform'];
   $tell=$_POST['input_name_form'];
 
@@ -49,6 +50,7 @@ if(isset($_POST['buttonform'])){
   // $mail->addAttachment('intro.png');    // Optional name
 
   // Content
+  error_log("Здравствуйте, меня зовут -".$name."Телефон -".$tell, 0);
   $mail->isHTML(true);  // Set email format to HTML
   $mail->Subject = 'Новая запись на маникюр!';
   $mail->Body    = "Здравствуйте, меня зовут -".$name."Телефон -".$tell;
