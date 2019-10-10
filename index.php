@@ -12,53 +12,50 @@ require 'Exception.php';
 
 if(isset($_POST['buttonform'])){
 
-$name=$_POST['inputform'];
-//$tell=$_POST['input_name_form'];
+  $name=$_POST['inputform'];
+  $tell=$_POST['input_name_form'];
 
-//$email=$_POST['email2'];
-// Instantiation and passing true enables exceptions
-$mail = new PHPMailer;
+  //$email=$_POST['email2'];
+  // Instantiation and passing true enables exceptions
+  $mail = new PHPMailer;
 
 
-    //Server settings
-    $mail->SMTPDebug = 0;    
+  //Server settings
+  $mail->SMTPDebug = 0;    
 
-    $mail->isSMTP();   
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);                                         // Set mailer to use SMTP
-    $mail->CharSet = 'UTF-8';
-    $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                     // Enable SMTP authentication
-    $mail->Username   = 'admin@powersite.com.ua'; // SMTP username
-    $mail->Password   = 'AueuR6GZw3';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
+  $mail->isSMTP();   
+  $mail->SMTPOptions = array(
+      'ssl' => array(
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+          'allow_self_signed' => true
+      )
+  );                                         // Set mailer to use SMTP
 
-    //Recipients
-    $mail->setFrom('admin@powersite.com.ua', 'Powersite');
-    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
-    $mail->addReplyTo('info@powerproject.com.ua', 'Information');
+  $mail->CharSet = 'UTF-8';
+  $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
+  $mail->SMTPAuth   = true;                     // Enable SMTP authentication
+  $mail->Username   = 'admin@powersite.com.ua'; // SMTP username
+  $mail->Password   = 'AueuR6GZw3';                           // SMTP password
+  $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
+  $mail->Port       = 587;                                    // TCP port to connect to
 
-    // Attachments
-    // $mail->addAttachment('intro.png');    // Optional name
+  //Recipients
+  $mail->setFrom('admin@powersite.com.ua', 'Powersite');
+  $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
+  $mail->addReplyTo('info@powerproject.com.ua', 'Information');
 
-    // Content
-    $mail->isHTML(true);  // Set email format to HTML
-    $mail->Subject = 'Новая запись на маникюр!';
-    $mail->Body    = "
-      Здравствуйте, меня зовут - 
-      $name
+  // Attachments
+  // $mail->addAttachment('intro.png');    // Optional name
 
-";
-   
+  // Content
+  $mail->isHTML(true);  // Set email format to HTML
+  $mail->Subject = 'Новая запись на маникюр!';
+  $mail->Body    = "Здравствуйте, меня зовут -".$name."Телефон -".$tell;
+    
 
-    $mail->send();
-    echo 'Message has been sent';
+  $mail->send();
+  echo 'Message has been sent';
 }
 ?>
 
