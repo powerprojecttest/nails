@@ -1,3 +1,4 @@
+/*-----------------SHOW__order------------------*/ 
 $("#my__button-order").click(function(){
     $("#background__grey").show();
     $("#my__form").show();
@@ -20,24 +21,25 @@ $("#close__button").click(function(){
 });
 
 
-
+/*-----------------SHOW__PRICE------------------*/ 
 $("#next__nails").click(function(){
     $("#background__grey").show();
-    $("#my__form").show();
+    $("#my__price").show();
 });
 
 $("#background__grey").click(function(){
     $("#background__grey").hide();
-    $("#my__form").hide();
+    $("#my__price").hide();
 });
 
-$('#my__form').click(function(event) {
+$('#my__price').click(function(event) {
     event.stopPropagation();
   });
 
 
+/*
 $("#close__button").click(function(){ 
     $("#background__grey").hide();
-    $("#my__form").hide();
-   // $("#form__callyou").show();
+    $("#my__price").hide();
 });
+*/

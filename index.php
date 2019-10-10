@@ -501,21 +501,25 @@ e.preventDefault()
 
 
 <!------------------------------------PRICE-------------------------------------->
+<iframe name="FormName" style="display: none;"></iframe>
+<div id="background__grey" class="container_background" style="display: none;">
+  <div class=" container">
+    <div class="my__price">
+      <form id="my__price" method="POST" action="" target="FormName" style="display: none;">
 
-<div class="container-fluid " id="menu2_child">
-    <div class="row price price__row">
-        <div class="offset-sm-1 col-sm-10">
-            <div id="price"><p>Прайс</p>
-            <div class="pink__line"></div>  
-            </div>       
+        <div class="row price price__row">
+            <div class="offset-sm-1 col-sm-10">
+                <div id="price"><p>Прайс</p>
+                <div class="pink__line"></div>  
+                </div>       
+            </div>
         </div>
-    </div>
-    <div class="row price">
-        <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр гигиенический, женский.</p>
-            <p class="red__text">Обрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
-        <div class="col-sm-1 text-right"></div>
-        <div class="col-sm-1 text-left"><p>120 грн</p></div>
-    </div>
+                <div class="row price">
+                    <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр гигиенический, женский.</p>
+                        <p class="red__text">Обрезной маникюр с ванночкой и шлифовкой ногтей</p></div>
+                    <div class="col-sm-1 text-right"></div>
+                    <div class="col-sm-1 text-left"><p>120 грн</p></div>
+                </div>
         
                 <div class="row price">
                     <div class="offset-sm-1 col-sm-8 manicure"><p>Маникюр гигиенический, мужской.</p>
@@ -606,11 +610,14 @@ e.preventDefault()
                     <div class="col-sm-1 text-right"></div>
                 <div class="col-sm-1 text-left"><p>250 грн</p></div>
             </div>
-    <div class="row price">
-        <div class="offset-sm-1 col-sm-10 subheder-col" id="btn-main3">
-            <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
-        </div>
+                <div class="row price">
+                  <div class="offset-sm-1 col-sm-10 subheder-col" id="btn-main3">
+                    <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
+                  </div>
+                </div>
+      </form>
     </div>
+  </div>
 </div>
 <!------------------------------------PRICE-------------------------------------->
 
