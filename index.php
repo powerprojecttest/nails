@@ -173,7 +173,7 @@ e.preventDefault()
 
       <div class="row">
         <div class="col-sm-12" id="btn-main">
-          <a class="click-me" href="forma.html"><button class='button__order'>Записаться</button></a>
+         <button class='button__order'>Записаться</button>
         </div>
     </div>
   </section>
@@ -360,7 +360,7 @@ e.preventDefault()
 <div id="background__grey" class="container_background" style="display: none;">
 <div class=" container">
       <div class="my__form">
-    <form id="my__form" method="POST" action="" target="FormName">
+    <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
       <div class="order__service order__main_text"><label>Заказать услугу</label></div>
       <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
       <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="inputform"> </div>
@@ -490,7 +490,7 @@ e.preventDefault()
 </div>
 </div>
 <!--*********************************FORM********************************-->
-<script src="js/script__order.js"></script> 
+<script src="script__order.js"></script> 
 <script>
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
