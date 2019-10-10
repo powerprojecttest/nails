@@ -13,3 +13,16 @@
 .tell-center{
     text-align: center;
 }
+.logo__malinna_photonails {
+    padding-left: 45px;
+    padding-top: 50px;
+    width: 200px;
+}
+.studio__nails_photonails{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding-left: 16px;
+    padding-top: 15px;
+}
