@@ -744,7 +744,7 @@ var owl = $('.owl-carousel');
 owl.owlCarousel({ 
     loop:true, 
     nav:true, 
-     navText : ["<div class="arrow_left"></div>","<div class="arrow_right"></div>"], 
+     navText : ["<div class='arrow_left'></div>","<div class='arrow_right'></div>"], 
     margin:10, 
     responsive:{ 
         0:{ 
