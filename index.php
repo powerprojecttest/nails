@@ -13,7 +13,7 @@ require 'Exception.php';
 if(isset($_POST['buttonform'])){
 
 $name=$_POST['inputform'];
-$tell=$_POST['input_name_form'];
+//$tell=$_POST['input_name_form'];
 
 //$email=$_POST['email2'];
 // Instantiation and passing true enables exceptions
@@ -53,8 +53,6 @@ $mail->SMTPOptions = array(
     $mail->Body    = "
       Здравствуйте, меня зовут - 
       $name
-      Мой номер
-      $tell
 ";
    
 
