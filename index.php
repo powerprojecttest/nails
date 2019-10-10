@@ -755,7 +755,7 @@ $('.accordion').click(function(){
 	$('.expanded').show();          
         $('.panel').each( function (i){
            $(this).show();
-            $('.panel').animate({ height: "120px"},1000);
+            $('.panel').animate({ height: "120px"},500);
 	    
 });          
 });
@@ -766,7 +766,7 @@ $('.expanded').click(function(){
 	    $(this).hide();
 	    $('.accordion').show();
 $('.panel').each( function (i){  
-            $(this).animate({height: "0px"},1000);   
+            $(this).animate({height: "0px"},500);   
              
 });   
     $('.panel').hide();   
