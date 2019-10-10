@@ -514,7 +514,7 @@ e.preventDefault()
 
 <!------------------------------------PRICE-------------------------------------->
 <iframe name="FormName" style="display: none;"></iframe>
-<div id="background__grey1" class="container_background" style="display: none;">
+<div id="background__grey1" class="container_background_price" style="display: none;">
   <div class=" container">
     <div class="my__price">
       <form id="my__price" method="POST" action="" target="FormName" style="display: none;">
