@@ -101,7 +101,7 @@ border-color: transparent #000000 transparent transparent;
     border-color: transparent #d45467 transparent transparent;
 }
 .owl-next:hover .arrow_right{
-    border-color: transparent #d45467 transparent transparent;
+    border-color: transparent  transparent transparent #d45467;
 }
 
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
