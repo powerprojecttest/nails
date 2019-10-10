@@ -66,10 +66,10 @@ border-color: transparent transparent transparent #000000;
 
 }
 .arrow_left:hover{
-    border-color: transparent transparent transparent #d75468;
+    border-color: #d75468;
 }
 .arrow_right:hover{
-    border-color: transparent transparent transparent #d75468;
+    border-color:  #d75468;
 }
 .owl-prev { 
     width: 50px; 
