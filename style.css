@@ -616,10 +616,7 @@ transition: background-position 0.3s;
     background-position:0 0;
     cursor: pointer;
 }
-.arrow__left:hover{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
+
 #cont-button{
 height:25px;
 }
