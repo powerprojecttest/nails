@@ -175,7 +175,7 @@ e.preventDefault()
 
       <div class="row">
         <div class="col-sm-12 call__me">
-          <h4>+38 (096) 323 5000</h4>
+          <h4>+38 (096) 323 50 00</h4>
         </div>
       </div>
 
