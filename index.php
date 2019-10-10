@@ -500,14 +500,20 @@ e.preventDefault()
 </div>
 </div>
 <!--*********************************FORM********************************-->
+
 <!--*********************************FORM_CALL_YOU********************************-->
 <iframe name="FormName" style="display: none;"></iframe>
 <div id="background__grey" class="container_background" style="display: none;">
-<div class=" container">
-      <div class="my__form">
-    <form id="my__form" method="POST" action="" target="FormName" style="display: none;">
-
+  <div class=" container">
+    <div class="form__thank">
+      <form id="form__thank" method="POST" action="" target="FormName" style="display: none;">
+      <label for="text__label">Спасибо за запись! Мы сегодня свяжемся с Вами!</label>
+      </form>
+    </div>
+  </div>
+</div>
 <!--*********************************FORM_CALL_YOU********************************-->
+
 <!------------------------------------PRICE-------------------------------------->
 <iframe name="FormName" style="display: none;"></iframe>
 <div id="background__grey" class="container_background" style="display: none;">
