@@ -744,7 +744,7 @@ var owl = $('.owl-carousel');
 owl.owlCarousel({ 
     loop:true, 
     nav:true, 
-     navText : ["<img src='img/arrow_left.png'>","<img src='img/arrow_right.png'>"], 
+     navText : ["<a href="#" class="rollover_left"> </a>","<a href="#" class="rollover_right"> </a>"], 
     margin:10, 
     responsive:{ 
         0:{ 
