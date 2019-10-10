@@ -1,3 +1,65 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer.php';
+require 'SMTP.php';
+require 'Exception.php';
+
+if(isset($_POST['buttonform'])){
+
+$name=$_POST['inputform'];
+
+//$email=$_POST['email2'];
+// Instantiation and passing true enables exceptions
+$mail = new PHPMailer;
+
+
+    //Server settings
+    $mail->SMTPDebug = 0;    
+
+    $mail->isSMTP();   
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);                                         // Set mailer to use SMTP
+    $mail->CharSet = 'UTF-8';
+    $mail->Host       = 'mail.powersite.com.ua';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                     // Enable SMTP authentication
+    $mail->Username   = 'admin@powersite.com.ua'; // SMTP username
+    $mail->Password   = 'AueuR6GZw3';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, ssl also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('admin@powersite.com.ua', 'Powersite');
+    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
+    $mail->addReplyTo('info@powerproject.com.ua', 'Information');
+
+    // Attachments
+    // $mail->addAttachment('intro.png');    // Optional name
+
+    // Content
+    $mail->isHTML(true);  // Set email format to HTML
+    $mail->Subject = 'LEtter';
+    $mail->Body    = "
+      HEllo!!
+      $name
+";
+   
+
+    $mail->send();
+    echo 'Message has been sent';
+}
+?>
+
 <!DOCTYPE html>
 <html >
   <head>
@@ -293,7 +355,142 @@ e.preventDefault()
     </div>
   </div>
 </footer>
+<!--*********************************FORM********************************-->
+<iframe name="FormName" style="display: none;"></iframe>
+<div id="background__grey" class="container_background" style="display: none;">
+<div class=" container">
+      <div class="my__form">
+    <form id="my__form" method="POST" action="" target="FormName">
+      <div class="order__service order__main_text"><label>Заказать услугу</label></div>
+      <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
+      <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="inputform"> </div>
+      <div class="services order__main_text"><label>Услуги</label></div> 
 
+<section>
+<div class="row row__services">
+  <div class="col-sm-6">
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service1">
+
+      <label class="form-check-label" for="service1">
+          <p class="manicure__form">Маникюр женский<p class="price__form"> 120 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service2">
+      
+      <label class="form-check-label" for="service2"><p class="manicure__form">Маникюр европейский<p class="price__form"> 100 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service3">
+      <label class="form-check-label" for="service3"><p class="manicure__form">Гель-лак, френч, лунный.<p class="price__form"> 250 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service4">
+      <label class="form-check-label" for="service4"><p class="manicure__form">Дизайн ногтей(1шт)<p class="price__form"> 5-30 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service5">
+      <label class="form-check-label" for="service5"><p class="manicure__form">Ремонт ногтя(1шт)<p class="price__form"> 30 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service6">
+      <label class="form-check-label" for="service6"><p class="manicure__form">Снятие нарощенных<p class="price__form"> от 80 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row one__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service7">
+      <label class="form-check-label" for="service7"><p class="manicure__form">Spa-процедура<p class="price__form"> 80 грн</p></p></label>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="col-sm-6">
+  <div class="row second__coll"> 
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="service1">
+        <label class="form-check-label" for="service1"><p class="manicure__form">Маникюр мужской<p class="price__form">150 грн</p></p></label>
+      </div>
+  </div>
+
+  <div class="row second__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service2">
+      <label class="form-check-label" for="service2"><p class="manicure__form">Покрытие гель-лак<p class="price__form"> 230 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row second__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service3">
+      <label class="form-check-label" for="service3"><p class="manicure__form">Снятие гель-лака <p class="price__form"> 50 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row second__coll ">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service4">
+      <label class="form-check-label" for="service4"><p class="manicure__form">Наращивание ногтей<p class="price__form"> от 700 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row second__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service5">
+      <label class="form-check-label" for="service5"><p class="manicure__form">Коррекция нарощенных<p class="price__form"> от 400 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row second__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service6">
+      <label class="form-check-label" for="service6"><p class="manicure__form">Педикюр женский<p class="price__form"> 170 грн</p></p></label>
+    </div>
+  </div>
+
+  <div class="row second__coll">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="service7">
+      <label class="form-check-label" for="service7"><p class="manicure__form">Педикюр мужской<p class="price__form"> 250 грн</p></p></label>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="btn__submit">
+      <input type="submit" name="buttonform" id="close__button" value="Записаться">
+    </div>
+  </div>
+</div>
+</section>
+</form>
+</div>
+</div>
+</div>
+<!--*********************************FORM********************************-->
+<script src="js/script__order.js"></script> 
 <script>
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
