@@ -622,11 +622,6 @@ e.preventDefault()
                     <div class="col-sm-1 text-right"></div>
                 <div class="col-sm-1 text-left"><p>250 грн</p></div>
             </div>
-                <div class="row price">
-                  <div class="offset-sm-1 col-sm-10 subheder-col" id="btn-main3">
-                    <a class="click-me" href="index.html"><button class='btn btn-outline-primary button__more-nails'>Вернуться на главную</button></a>
-                  </div>
-                </div>
       </form>
     </div>
   </div>
