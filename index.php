@@ -749,13 +749,13 @@ $('.owl-nav').removeClass('disabled');
 <script>
 
 $('.expanded').hide(); 
-$('.panel').css({ height: "0%"});
+$('.panel').css({ height: "0px"});
 $('.accordion').click(function(){  
 	$(this).hide();
 	$('.expanded').show();          
         $('.panel').each( function (i){
            $(this).show();
-            $('.panel').animate({ height: "100%"},1000);
+            $('.panel').animate({ height: "120px"},1000);
 	    
 });          
 });
