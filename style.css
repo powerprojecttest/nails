@@ -143,7 +143,15 @@ font-size: 36px;
 position:fixed;
 }
 
-
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    margin: 5px;
 h3{
     font-family: 'Marck Script', cursive;
 }

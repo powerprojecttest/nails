@@ -491,6 +491,7 @@ e.preventDefault()
 </div>
 </div>
 <!--*********************************FORM********************************-->
+
 <script src="script__order.js"></script> 
 <script>
 document.addEventListener('DOMContentLoaded',function(event){
@@ -628,7 +629,6 @@ $('.accordion').click(function(){
 	$(this).hide();
 	$('.expanded').show();          
         $('.panel').each( function (i){
-	    $(this).css({display:"block",height: "0"});
             $(this).animate({height: "100%"},1000);
 	    
 });          
