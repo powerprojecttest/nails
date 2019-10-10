@@ -10,10 +10,11 @@
 .portfolio{
     padding-top: 20px;
 }
-.tell-center{
+h4.tell-center{
     text-align: center;
+    font-size: 14px;
 }
-.logo__malinna_photonails {
+img.logo__malinna_photonails {
     padding-left: 45px;
     padding-top: 50px;
     width: 200px;
