@@ -64,8 +64,8 @@ if(isset($_POST['buttonform'])){
 <!DOCTYPE html>
 <html >
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="Malinna">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Malinna</title>
     <meta name="description" content="Malinna">
     <meta name="keywords" content="Malinna">
@@ -77,9 +77,7 @@ if(isset($_POST['buttonform'])){
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="adapt.css">
     <link rel="stylesheet" href="forma.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
    
@@ -310,7 +308,7 @@ e.preventDefault()
 
   <div class="outer__container">   
     <div class="owl-carousel owl-theme">
-      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" alt="" style="width:900px;"></a></div></div>
+      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" class="photo__gallery"  alt=""></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail2.png"><img src="img/nail2.png" alt="" style="width:900px;"></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail3.png"><img src="img/nail3.png" alt="" style="width:900px;"></a></div></div>
       <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail4.png"><img src="img/nail4.png" alt="" style="width:900px;"></a></div></div>
@@ -357,10 +355,10 @@ e.preventDefault()
   </div>
  
   <div class="row" style="margin:0;">
-    <div class="col-4 f-1">
+    <div class="col-md-4 col-sm-12 f-1">
       <img class="photo__fasad" src="img/foto__fasad.png" alt=""> 
     </div>
-    <div class="col-md-4 adress">
+    <div class="col-md-4 col-sm-12 adress">
       <p class="our__adress"><strong>АДРЕС:</strong></p><br>
       <div class="adress__content" >
         <p class="our__adress__text">Cофиевская Борщаговка,</p>
@@ -372,7 +370,7 @@ e.preventDefault()
       </div>
     </div>
 
-    <div class="col-4 f-3">
+    <div class="col-md-4 col-sm-12 f-3">
       <div id="map">
           <div class="contacts_map">
             <iframe width="" height="" src="https://maps.google.com/maps?q=%D0%96%D0%9A%20%22%D0%A1%D0%BE%D1%84%D0%B8%D1%8F%22%20%D1%83%D0%BB.%20%D0%9B.%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8%2C6+(%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD%D0%BD%D0%B0)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

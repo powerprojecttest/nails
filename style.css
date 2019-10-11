@@ -126,7 +126,9 @@ margin-right: 10%;
 height:320px;
 }
 
-
+.photo__gallery{
+    width:900px;
+}
 .logo__malinna{ 
     padding-left: 45px;
 }
