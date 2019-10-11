@@ -308,12 +308,14 @@ e.preventDefault()
 
   <div class="outer__container">   
     <div class="owl-carousel owl-theme">
-      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail1.png"><img src="img/nail1.png" class="photo__gallery"  alt=""></a></div></div>
-      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail2.png"><img src="img/nail2.png" alt="" style="width:900px;"></a></div></div>
-      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail3.png"><img src="img/nail3.png" alt="" style="width:900px;"></a></div></div>
-      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail4.png"><img src="img/nail4.png" alt="" style="width:900px;"></a></div></div>
-      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail5.png"><img src="img/nail5.png" alt="" style="width:900px;"></a></div></div>
-      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail6.png"><img src="img/nail6.png" alt="" style="width:900px;"></a></div></div>
+      <div class="overflow"><div> <a class="fancybox" rel="group"  href="img/nail_1.jpg"><img src="img/nail_1.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_2.jpg"><img src="img/nail_2.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_3.jpg"><img src="img/nail_3.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_4.jpg"><img src="img/nail_4.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_5.jpg"><img src="img/nail_5.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_6.jpg"><img src="img/nail_6.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_7.jpg"><img src="img/nail_7.jpg" class="photo__gallery" alt=""></a></div></div>
+      <div class="overflow"> <div><a class="fancybox" rel="group"  href="img/nail_8.jpg"><img src="img/nail_8.jpg" class="photo__gallery" alt=""></a></div></div>
     </div>
   </div>
 

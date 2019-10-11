@@ -127,7 +127,7 @@ height:320px;
 }
 
 .photo__gallery{
-    width:900px;
+    width:100%;
 }
 .logo__malinna{ 
     padding-left: 45px;
@@ -351,12 +351,8 @@ width:300px !important;
 }
 
 
-.outer__container .overflow{
-height:70vh !important;
-}
 
-
-.our__masters{
+.our__masters{по 
     width: 100%;
 }
 
@@ -661,9 +657,12 @@ height:40px;
 }
 
 /*-------------------------------*/
+.first__photo{
+    width: 100%;
+}
 .father{
     position: relative;
-    width: 350px;
+    width: 100%;
 }
 .opasity__block{
     background: rgba(255, 255, 255, 0.7);

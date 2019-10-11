@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .first__photo{
-        width: 300px;
+        width: 100%;
     }
     .icon__photo{
         width: 50px;
@@ -10,11 +10,11 @@
         left: 40%;
     }
     .main__text {
-        top: 30%;
+        top: 27%;
         left: 45%;
     }
     .dependent__text {
-        top: 53%;
+        top: 55%;
         left: 45%;
         width: 230px;
     }
@@ -37,16 +37,19 @@
 
     }
     .photo__fasad{
-        width: 280px;
+        width: 100%;
         height: 280px;
     }
     iframe{
-        width: 280px;
+        width: 100%;
         height: 280px;
     }
     .adress {
         font-size: 16px;
     }
+    .owl-carousel {
+        height:345px;
+           }
 
 }
 /*--------------------------------------------------THE TABLET-----------------------------------------------------------*/
@@ -56,7 +59,7 @@
         padding-left: 30px;
     }
     .first__photo{
-        width: 200px;
+        width: 100%;
     }
     .studio__nails {
         font-size: 14px;
@@ -104,18 +107,21 @@
         left: 24%;
         font-size: 12px;
     }
-    .photo__fasad{
-        width: 200px;
-        height: 200px;
-    }
-    iframe{
-        width: 200px;
-        height: 200px;
-    }
     .adress {
         font-size: 12px;
         padding: 0 10px;
     }
+    .photo__fasad{
+        width: 100%;
+        height: 200px;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+    .owl-carousel {
+        height:240px;
+           }
 }
 /*--------------------------------------------------MOBILE-----------------------------------------------------------*/
 @media (max-width: 768px) {
@@ -148,47 +154,88 @@
         padding-bottom: 20px;
     }
     .first__photo{
-        width: 290px;
+        width: 100%;
     }
     .icon__photo{
         width: 40px;
     }
     .icon {
         top: 5%;
-        left: 37%;
+        left: 45%;
     }
     .main__text {
-        top: 30%;
-        left: 40%;
+        top: 24%;
+        left: 52%;
         font-size: 14px;
     }
     .dependent__text {
-        top: 53%;
-        left: 40%;
-        width: 200px;
-        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        font-size: 14px;
     }
     .circle__flag {
         top: 65%;
         width: 70px;
         height: 70px;
-        left: 32%;
+        left: 36%;
     }
     .circle__flag-price-how_much {
         top: 71%;
-        left: 37%;
-        font-size: 18px;
+        left: 42%;
+        font-size: 16px;
 
     }
     .circle__flag-price-uan {
-        top: 80%;
-        left: 38%;
+        top: 79%;
+        left: 44%;
         font-size: 12px;
     }
+    .owl-carousel {
+        height:120px;
+           }
     #inst h3 {
-        font-size: 18px;
+        font-size: 26px;
     }
-
-
+    .photo__fasad{
+        width: 100%;
+        height: 220px;
+    }
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+    .adress {
+        font-size: 12px;
+        padding: 0 50px;
+    }
+    .our__adress{
+        padding-top: 10px;
+    }
+    #inst-cont__footer {
+        margin-top: 0px;
+    }
+    .owl-prev {
+        width: 39px;
+        height: 60px;
+        top: 28%;
+        left: 5px;
+    }
+    .arrow_left {
+        width: 20px;
+        height: 5px;
+        border-width: 6.75px 10px 6.75px 0;
+        padding-left: 15px;
+    }
+    .owl-next {
+        width: 39px;
+        height: 60px;
+        top: 28%;
+    }
+    .arrow_right {
+        width: 20px;
+        height: 5px;
+        border-width: 6.75px 0 6.75px 10px;
+    }
 
 }
