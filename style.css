@@ -356,78 +356,6 @@ height:70vh !important;
 .our__masters{
     width: 100%;
 }
-.fon__nails{
-    padding: 0px;
-}
-.img-col1{
-    padding-left: 0px;
-}
-.img-col3{
-    padding-left: 27px;
-}
-.img-col1 .main__text{
-
-text-align:center;
-position: absolute;
-top: 40%;
-left: 47%;
-transform: translate( -50%);
-font-weight: bolder;
-font-size: 16px;
-}
-
-.img-col2 .main__text{
-
-    text-align:center;
-    position: absolute;
-    top: 40%;
-    left: 47%;
-    transform: translate( -50%);
-    font-weight: bolder;
-    font-size: 16px;
-}
-
-.img-col3 .main__text{
-
-    text-align:center;
-    position: absolute;
-    top: 40%;
-    left: 54%;
-    transform: translate( -50%);
-    font-weight: bolder;
-    font-size: 16px;
-}
-
-.img-col1 .dependent__text{
-
-text-align:center;
-position: absolute;
-top: 60%;
-left: 47%;
-transform: translate(-50%, -50%);
-letter-spacing: normal;
-}
-
-.img-col2 .dependent__text{
-    text-align:center;
-    position: absolute;
-    top: 60%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    letter-spacing: normal;
-    width: 300px;
-}
-
-.img-col3 .dependent__text{
-    text-align:center;
-    position: absolute;
-    top: 60%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    letter-spacing: normal;
-    width: 200px;
-}
-
 
 
 .carousel-inner{
@@ -728,3 +656,69 @@ height:40px;
 .section__none_padding{
     margin-bottom: 0px;
 }
+
+/*-------------------------------*/
+.father{
+    position: relative;
+    width: 350px;
+}
+.opasity__block{
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.icon{
+    top: 10%;
+    position: absolute;
+    left: 45%;
+}
+.circle__flag-price-how_much {
+    top: 73%;
+    text-align: center;
+    position: absolute;
+    left: 43%;
+    font-family: myriad-pro, sans-serif;
+    font-size: 24px;
+    color: #d75467;
+    font-weight: bolder;
+}
+.circle__flag-price-uan {
+    top: 81%;
+    text-align: center;
+    position: absolute;
+    left: 46%;
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+    color: #d75467;
+    font-style: italic;
+}
+.circle__flag {
+    top: 65%;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    background: rgba(255, 255, 255, 0.6);
+}
+.main__text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate( -50%);
+    font-weight: bolder;
+    font-size: 16px;
+}
+.dependent__text {
+    text-align: center;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: normal;
+    width: 250px;
+}
+

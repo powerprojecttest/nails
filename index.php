@@ -74,7 +74,7 @@ if(isset($_POST['buttonform'])){
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	  <link href="//allfont.ru/allfont.css?fonts=corinthia" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="forma.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -241,23 +241,52 @@ e.preventDefault()
     </div>
 
     <div class="row" id="rw_photos" style="margin:0;">
+
       <div class="col-md-4 img-col1">
-        <img class="price_photo__malinna" src="img/1.png" alt="">
-        <p  class="main__text">КОМПЛЕКС "РУЧКИ"</p>
-        <p  class="dependent__text">Снятие гель лака, маникюр и покрытие</p>
+        <div class="father">
+          <div class="opasity__block"></div>
+          <div class=""><img  src="img/hands.jpg" alt=""></div>
+          <div class="icon"><img  src="img/hands_icon.png" alt=""></div>
+            <div class="text__on-block">
+              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag-price-how_much">350</div>
+              <div class="circle__flag-price-uan">грн</div>
+              <div><p  class="main__text">КОМПЛЕКС "РУЧКИ"</p></div>
+              <div><p  class="dependent__text">Снятие гель лака, маникюр и покрытие</p></div>
+            </div>
+        </div>
       </div>
 
-      <div class="col-md-4 img-col2">
-        <img class="price_photo__malinna" src="img/2.png" alt="">
-        <p  class="main__text">КОРРЕКЦИЯ</p>
-        <p  class="dependent__text">Коррекция/укрепление гелевой системой, маникюр и покрытие</p>
+      <div class="col-md-4 img-col1">
+        <div class="father">
+          <div class="opasity__block"></div>
+          <div class=""><img  src="img/correction.jpg" alt=""></div>
+          <div class="icon"><img  src="img/correction_icon.png" alt=""></div>
+            <div class="text__on-block">
+              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag-price-how_much">450</div>
+              <div class="circle__flag-price-uan">грн</div>
+              <div><p  class="main__text">КОРРЕКЦИЯ</p></div>
+              <div><p  class="dependent__text">Коррекция/укрепление гелевой системой, маникюр и покрытие</p></div>
+            </div>
+        </div>
       </div>
 
-      <div class="col-md-4 img-col3">
-        <img class="price_photo__malinna" src="img/3.png" alt="">
-        <p  class="main__text">КОМПЛЕКС "НОЖКИ"</p>
-        <p  class="dependent__text">Снятие гель лака, педикюр и покрытие</p>
-      </div>  
+      <div class="col-md-4 img-col1">
+        <div class="father">
+          <div class="opasity__block"></div>
+          <div class=""><img  src="img/foots.jpg" alt=""></div>
+          <div class="icon"><img  src="img/legs_icon.png" alt=""></div>
+            <div class="text__on-block">
+              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag-price-how_much">400</div>
+              <div class="circle__flag-price-uan">грн</div>
+              <div><p  class="main__text">КОМПЛЕКС "НОЖКИ"</p></div>
+              <div><p  class="dependent__text">Снятие гель лака, педикюр и покрытие</p></div>
+            </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="row">  
