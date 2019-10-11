@@ -1,0 +1,87 @@
+
+/*--------------------------------------------------THE TABLET-----------------------------------------------------------*/
+@media (max-width: 992px) {
+
+    .logo__malinna {
+        width: 200px;
+        padding-left: 30px;
+    }
+    .studio__nails {
+        font-size: 14px;
+        text-align: center;
+    }
+    #btn-main1 {
+        padding-left: 600px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    /**********PRICE************/
+    .first__photo{
+        width: 200px;
+    }
+    .icon__photo{
+        width: 40px;
+    }
+    .icon {
+        top: 5%;
+        position: absolute;
+        left: 25%;
+    }
+    .main__text {
+        top: 35%;
+        left: 30%;
+        font-size: 14px;
+    }
+    .dependent__text {
+        top: 54%;
+        left: 30%;
+        font-size: 12px;
+        width: 200px;
+    }
+    .circle__flag {
+        top: 65%;
+        width: 55px;
+        height: 55px;
+        left: 20%;
+    }
+    .circle__flag-price-how_much {
+        top: 70%;
+        left: 24%;
+        font-size: 18px;
+    }
+    .circle__flag-price-uan {
+        top: 79%;
+        left: 25%;
+        font-size: 12px;
+    }
+    /*------contacts------*/
+    .photo__fasad{
+        width: 200px;
+        height: 200px;
+    }
+    #map{
+        width: 200px;
+        height: 200px;
+    }
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+    .adress {
+       padding: 0 ;
+        font-size: 14px;
+    }
+/*-------------------------------Page_photo_nails--------------------------------------------------*/
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+/*--------------------------------------------------MOBILE-----------------------------------------------------------*/
+@media (max-width: 768px) {
+
+}

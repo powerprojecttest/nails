@@ -75,6 +75,7 @@ if(isset($_POST['buttonform'])){
 	  <link href="//allfont.ru/allfont.css?fonts=corinthia" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adapt.css">
     <link rel="stylesheet" href="forma.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -242,13 +243,13 @@ e.preventDefault()
 
     <div class="row" id="rw_photos" style="margin:0;">
 
-      <div class="col-md-4 img-col1">
+      <div class="col-md-4 col-sm-12 img-col1">
         <div class="father">
           <div class="opasity__block"></div>
-          <div class=""><img  src="img/hands.jpg" alt=""></div>
-          <div class="icon"><img  src="img/hands_icon.png" alt=""></div>
+          <div class=""><img class="first__photo" src="img/hands.jpg" alt=""></div>
+          <div class="icon"><img class="icon__photo" src="img/hands_icon.png" alt=""></div>
             <div class="text__on-block">
-              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">350</div>
               <div class="circle__flag-price-uan">грн</div>
               <div><p  class="main__text">КОМПЛЕКС "РУЧКИ"</p></div>
@@ -257,13 +258,13 @@ e.preventDefault()
         </div>
       </div>
 
-      <div class="col-md-4 img-col1">
+      <div class="col-md-4 col-sm-12 img-col1">
         <div class="father">
           <div class="opasity__block"></div>
-          <div class=""><img  src="img/correction.jpg" alt=""></div>
-          <div class="icon"><img  src="img/correction_icon.png" alt=""></div>
+          <div class=""><img class="first__photo" src="img/correction.jpg" alt=""></div>
+          <div class="icon"><img class="icon__photo" src="img/correction_icon.png" alt=""></div>
             <div class="text__on-block">
-              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">450</div>
               <div class="circle__flag-price-uan">грн</div>
               <div><p  class="main__text">КОРРЕКЦИЯ</p></div>
@@ -272,13 +273,13 @@ e.preventDefault()
         </div>
       </div>
 
-      <div class="col-md-4 img-col1">
+      <div class="col-md-4 col-sm-12 img-col1">
         <div class="father">
           <div class="opasity__block"></div>
-          <div class=""><img  src="img/foots.jpg" alt=""></div>
-          <div class="icon"><img  src="img/legs_icon.png" alt=""></div>
+          <div class=""><img class="first__photo" src="img/foots.jpg" alt=""></div>
+          <div class="icon"><img class="icon__photo" src="img/legs_icon.png" alt=""></div>
             <div class="text__on-block">
-              <div class="circle__flag"><img alt=""></div>
+              <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">400</div>
               <div class="circle__flag-price-uan">грн</div>
               <div><p  class="main__text">КОМПЛЕКС "НОЖКИ"</p></div>
@@ -357,7 +358,7 @@ e.preventDefault()
  
   <div class="row" style="margin:0;">
     <div class="col-4 f-1">
-      <img  src="img/foto__fasad.png" alt=""class="photo__fasad"> 
+      <img class="photo__fasad" src="img/foto__fasad.png" alt=""> 
     </div>
     <div class="col-md-4 adress">
       <p class="our__adress"><strong>АДРЕС:</strong></p><br>
@@ -373,7 +374,9 @@ e.preventDefault()
 
     <div class="col-4 f-3">
       <div id="map">
-          <div style="overflow:hidden;width: 340px;position: relative;"><iframe width="340" height="306" src="https://maps.google.com/maps?width=450&amp;height=300&amp;hl=en&amp;q=%D0%96%D0%9A%20%22%D0%A1%D0%BE%D1%84%D0%B8%D1%8F%22%20%D1%83%D0%BB.%20%D0%9B.%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8%2C6+(%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD%D0%BD%D0%B0)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;"></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+          <div class="contacts_map">
+            <iframe width="" height="" src="https://maps.google.com/maps?q=%D0%96%D0%9A%20%22%D0%A1%D0%BE%D1%84%D0%B8%D1%8F%22%20%D1%83%D0%BB.%20%D0%9B.%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8%2C6+(%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD%D0%BD%D0%B0)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div><br />
       </div>
     </div>
   </div>

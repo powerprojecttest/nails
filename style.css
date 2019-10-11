@@ -40,8 +40,9 @@ z-index:1000;
 padding:0 !important;
 }
 
-#fon_1{
-padding-left:0px;
+iframe{
+    width: 340px;
+    height: 306px;
 }
 
 .navbar{
