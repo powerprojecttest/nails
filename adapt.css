@@ -237,5 +237,8 @@
         height: 5px;
         border-width: 6.75px 0 6.75px 10px;
     }
+    .owl-stage-outer {
+        height: 130px;
+    }
 
 }
