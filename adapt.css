@@ -82,6 +82,9 @@
     .owl-carousel {
         height:345px;
            }
+           #btn-main1 {
+            padding-left: 690px;
+        }
 
 }
 /* Стили для средних экранов (дисплей шириной от 768 пикселей до 991 пикселей) */
@@ -99,7 +102,7 @@
         text-align: center;
     }
     #btn-main1 {
-        padding-left: 600px;
+        padding-left: 450px;
     }
     h4 {
         font-size: 18px;
@@ -194,7 +197,7 @@
 /* Стили для маленьких экранов (дисплей шириной от 576 пикселей до 767 пикселей) */
 @media (min-width: 576px) and (max-width: 767px) {
     #btn-main1 {
-        padding-left: 300px;
+        padding-left: 270px;
     }
     .logo__malinna {
         width: 260px;
@@ -349,9 +352,6 @@
 }
 /*--------------------------------------------------MOBILE-----------------------------------------------------------*/
 @media (max-width: 575px) {
-    #btn-main1 {
-        padding-left: 300px;
-    }
     .logo__malinna {
         width: 260px;
         padding-left: 95px;
@@ -497,6 +497,9 @@
     .owl-stage-outer {
         height: 130px;
         width: 265px;
+    }
+    #btn-main1 {
+        padding-left: 10px;
     }
 
 }
