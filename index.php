@@ -245,13 +245,13 @@ e.preventDefault()
         <div class="father">
           <div class="opasity__block"></div>
           <div class=""><img class="first__photo" src="img/hands.jpg" alt=""></div>
-          <div class="icon"><img class="icon__photo" src="img/hands_icon.png" alt=""></div>
+          <div class="icon"><img class="icon__photo__one" src="img/hands_icon.png" alt=""></div>
             <div class="text__on-block">
               <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">350</div>
               <div class="circle__flag-price-uan">грн</div>
-              <div><p  class="main__text">КОМПЛЕКС "РУЧКИ"</p></div>
-              <div><p  class="dependent__text">Снятие гель лака, маникюр и покрытие</p></div>
+              <div><p  class="main__text__one">КОМПЛЕКС "РУЧКИ"</p></div>
+              <div><p  class="dependent__text__one">Снятие гель лака, маникюр и покрытие</p></div>
             </div>
         </div>
       </div>
@@ -260,13 +260,13 @@ e.preventDefault()
         <div class="father">
           <div class="opasity__block"></div>
           <div class=""><img class="first__photo" src="img/correction.jpg" alt=""></div>
-          <div class="icon"><img class="icon__photo" src="img/correction_icon.png" alt=""></div>
+          <div class="icon"><img class="icon__photo__two" src="img/correction_icon.png" alt=""></div>
             <div class="text__on-block">
               <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">450</div>
               <div class="circle__flag-price-uan">грн</div>
-              <div><p  class="main__text">КОРРЕКЦИЯ</p></div>
-              <div><p  class="dependent__text">Коррекция/укрепление гелевой системой, маникюр и покрытие</p></div>
+              <div><p  class="main__text__two">КОРРЕКЦИЯ</p></div>
+              <div><p  class="dependent__text__two">Коррекция/укрепление гелевой системой, маникюр и покрытие</p></div>
             </div>
         </div>
       </div>
@@ -275,13 +275,13 @@ e.preventDefault()
         <div class="father">
           <div class="opasity__block"></div>
           <div class=""><img class="first__photo" src="img/foots.jpg" alt=""></div>
-          <div class="icon"><img class="icon__photo" src="img/legs_icon.png" alt=""></div>
+          <div class="icon"><img class="icon__photo__three" src="img/legs_icon.png" alt=""></div>
             <div class="text__on-block">
               <div class="circle__flag"></div>
               <div class="circle__flag-price-how_much">400</div>
               <div class="circle__flag-price-uan">грн</div>
-              <div><p  class="main__text">КОМПЛЕКС "НОЖКИ"</p></div>
-              <div><p  class="dependent__text">Снятие гель лака, педикюр и покрытие</p></div>
+              <div><p  class="main__text__three">КОМПЛЕКС "НОЖКИ"</p></div>
+              <div><p  class="dependent__text__three">Снятие гель лака, педикюр и покрытие</p></div>
             </div>
         </div>
       </div>
@@ -290,7 +290,7 @@ e.preventDefault()
 
     <div class="row">  
       <div class="col subheder-col" id="btn-main2">
-        <button class='btn btn-outline-primary button__more-price' id="next__nails">Подробный прайс</button>
+        <button type="button" class="btn btn-primary button__more-price" id="next__nails" data-toggle="modal" data-target=".bd-example-modal-lg">Подробный прайс</button>
       </div>
     </div>
   </div>
@@ -545,11 +545,14 @@ e.preventDefault()
 <!--*********************************FORM_CALL_YOU********************************-->
 
 <!------------------------------------PRICE-------------------------------------->
-<iframe name="FormName" style="display: none;"></iframe>
-<div id="background__grey1" class="container_background_price" style="display: none;">
-  <div class=" container">
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
     <div class="my__price">
-      <form id="my__price" method="POST" action="" target="FormName" style="display: none;">
+      <form id="my__price" method="POST" action="" target="FormName">
 
         <div class="row price price__row">
             <div class="offset-sm-1 col-sm-10">
@@ -655,6 +658,7 @@ e.preventDefault()
                 <div class="col-sm-1 text-left"><p>250 грн</p></div>
             </div>
       </form>
+    </div>
     </div>
   </div>
 </div>

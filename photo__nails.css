@@ -1,3 +1,14 @@
+.logo__malinna__new{ 
+    margin-left: 60px;
+}
+.studio__nails__new{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding-left: 55px;
+    padding-top: 15px;
+}
 .photo{
     width: 350px;
     height: 350px;
@@ -9,4 +20,97 @@
 }
 .portfolio{
     padding-top: 20px;
+}
+
+/* Стили для больших экранов (дисплей шириной от 992 пикселей до 1199 пикселей) */
+@media (min-width: 992px) and (max-width: 1199px)  {
+        /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 30px;
+    }
+    .studio__nails__new{
+        padding-left: 30px;
+    }
+    .photo {
+    width: 300px ;
+    height: 300px ;
+    padding-bottom: 20px;
+    }
+}
+/* Стили для средних экранов (дисплей шириной от 768 пикселей до 991 пикселей) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 0px;
+        padding-right: 45px;
+
+    }
+    .studio__nails__new{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .photo {
+    width: 220px ;
+    height: 220px ;
+    padding-bottom: 20px ;
+    }
+}
+/* Стили для маленьких экранов (дисплей шириной от 576 пикселей до 767 пикселей) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 0px;
+        padding-right: 45px;
+    }
+    
+    .studio__nails__new{
+        width: 200px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .logo__malina_manicure {
+        margin-left: -125px;
+        margin-top: 80px;
+    }
+    .sweet__manicure1{
+        margin-left: -120px;
+        margin-top: -40px;
+    }
+    .sweet__manicure2{
+        margin-left: -120px;
+    }
+    .photo {
+    width: 400px ;
+    height: 400px ;
+    padding-bottom: 20px ;
+    }
+    .tell-center__new {
+        margin-top: 210px;
+    }
+}
+/*----------MOBILE---------------*/
+@media (max-width: 575px) {
+    /*----more nails------*/
+    .logo__malina_manicure {
+        margin-left: -75px;
+        margin-top: -310px;
+    }
+    .sweet__manicure1{
+        margin-left: -55px;
+        margin-top: -145px;
+    }
+    .sweet__manicure2{
+        margin-left: -55px;
+    }
+    .tell-center__new {
+        margin-top: 100px;
+    }
+    .photo {
+    width: 350px ;
+    height: 350px ;
+    padding-bottom: 10px ;
+    }
+    .photo__nails {
+        margin-top: -80px;
+    }
 }
