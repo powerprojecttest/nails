@@ -832,6 +832,9 @@ section {
 button:focus {
     outline:none
 }
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+    }
 .dependent__text__one, .dependent__text__two, .dependent__text__three {
     text-align: center;
     position: absolute;
