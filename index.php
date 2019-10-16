@@ -44,7 +44,7 @@ if (isset($_POST['buttonform'])) {
 
     //Recipients
     $mail->setFrom('admin@powersite.com.ua', 'Powersite');
-    $mail->addAddress('yana.halimonenko@gmail.com');               // Name is optional
+    $mail->addAddress('syeryoha@gmail.com');               // Name is optional
     $mail->addReplyTo('info@powerproject.com.ua', 'Information');
 
     // Attachments
