@@ -37,7 +37,12 @@
     font-family: 'Marck Script', cursive;
 
 }
-
+.btn-primary:focus {
+    box-shadow:none;
+}
+.btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+    }
 .row__services{
     margin: 10px;
 }
