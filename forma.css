@@ -9,7 +9,7 @@
 }
 .second__coll{
     width: 400px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .container_background{
     background: rgba(14,0,0,0.2);
@@ -58,7 +58,7 @@
     padding: 10px;
     border: 1px solid grey;
     border-radius: 2px;
-    margin-left: 140px;
+    margin-left: 100px;
 }
 .your__phone{
     padding-bottom: 20px;
@@ -71,7 +71,7 @@
     padding: 10px;
     border: 1px solid grey;
     border-radius: 2px;
-    margin-left: 140px;
+    margin-left: 100px;
 }
 .manicure__form{
     font-size: 16px;
@@ -109,10 +109,8 @@
         cursor: pointer;
     }
     .my__form{
-        border: 1px solid #F75368;
         border-radius: 10px;
-        width: 900px;
-        margin-left: 10%;
+        width: 790px;
         background: rgba(255,255,255,0.9);
 
     }
