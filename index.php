@@ -103,6 +103,10 @@ if (isset($_POST['buttonform'])) {
 <body>
 <div class="container">
     <section>
+
+
+
+
         <div class="row">
             <div class="col-sm-4" id="fon_1">
                 <div class="pos-f-t">
@@ -366,7 +370,7 @@ if (isset($_POST['buttonform'])) {
             </div>
         </div>
     </section>
-
+<!--menu-->
 
     <section class="section__none_padding">
         <div id="insta">
@@ -839,6 +843,9 @@ if (isset($_POST['buttonform'])) {
         $('#navbarToggleExternalContent').addClass('hide');
 
     });
+    $('#navbarToggleExternalContent').on('mouseleave', function(){
+$(this).removeClass('show')
+})
 </script>
 
 <script>

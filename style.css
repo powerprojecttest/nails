@@ -420,7 +420,6 @@ section {
     width: 250px;
 
 }
-
 .sweet__manicure1 {
     font-family: 'Marck Script', cursive;
     font-size: 24px;
@@ -705,13 +704,26 @@ transition: background-position 0.3s;
 .icon__photo__one {
     width: 55px;
 }
-
+.icon__photo__one:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
 .icon__photo__two {
     width: 50px;
 }
-
+.icon__photo__two:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
 .icon__photo__three {
     width: 55px;
+}
+.icon__photo__three:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 
@@ -772,13 +784,17 @@ transition: background-position 0.3s;
 .father {
     position: relative;
     width: 100%;
+    
 }
-
+.opasity__block:hover {
+    transform: translate(100%);
+}
 .opasity__block {
     background: rgba(255, 255, 255, 0.7);
     height: 100%;
     width: 100%;
     position: absolute;
+    transition-duration: 1000ms;
 }
 
 .icon {
@@ -862,3 +878,19 @@ transition: background-position 0.3s;
 }
 
 
+
+/*Для пунктов меню*/
+.menu-item {
+    border: 2px solid red; /*Красная граница пунктов*/
+    display: inline-block; /*Выстраиваем пункты в линию*/
+    position: relative;
+    cursor: pointer; /*Указатель курсора мыши*/
+}
+.menu-item .submenu {
+    height: 50px; /*высота открывающегося блока - не обязательный пункт*/
+    width: 150px;/*ширина блока*/
+    background: greenyellow; /*фон*/
+    display: none; /*скрываем все пункты меню*/
+    position: absolute;
+    cursor: pointer;
+}
