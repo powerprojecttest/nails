@@ -159,8 +159,15 @@
             margin-left: 27px;
             width: 300px;
         }
-.col-sm-12{
-    padding-left: 0px;
-}
+    .col-sm-12{
+        padding-left: 0px;
+    }
+    .manicure__form {
+        font-size: 14px;
+    }
+    .price__form {
+        padding-left: 0px;
+        font-size: 14px;
+    }
     }
     
