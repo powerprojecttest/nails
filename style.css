@@ -826,11 +826,11 @@ section {
 .main__text__three {
     left: 50%;
 }
-button:focus {
-    outline: none;
-}
 .btn-primary:focus {
     box-shadow:none;
+}
+button:focus {
+    outline:none
 }
 .dependent__text__one, .dependent__text__two, .dependent__text__three {
     text-align: center;
