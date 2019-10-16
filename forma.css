@@ -114,4 +114,53 @@
         background: rgba(255,255,255,0.9);
 
     }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .modal-dialog {
+            max-width: 760px;
+        }
+        .my__form {
+            width: 750px;
+        }
+        .your__name input {
+            margin-left: 75px;
+        }
+        .your__phone input {
+            margin-left: 75px;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        .modal-dialog {
+            max-width: 470px;
+        }
+        .my__form {
+            width: 460px;
+        }
+        .your__name input {
+            margin-left: 30px;
+            width: 400px;
+        }
+        .your__phone input {
+            margin-left: 30px;
+            width: 400px;
+        }
+    }
+    @media (max-width: 575px) {
+        .modal-dialog {
+            max-width: 370px;
+        }
+        .my__form {
+            width: 340px;
+        }
+        .your__name input {
+            margin-left: 27px;
+            width: 300px;
+        }
+        .your__phone input {
+            margin-left: 27px;
+            width: 300px;
+        }
+.col-sm-12{
+    padding-left: 0px;
+}
+    }
     

@@ -716,6 +716,11 @@ transition: background-position 0.3s;
 
 
 /*-------------------------PRICE--------------------------*/
+.my__price{
+    width: 790px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .cont__price {
     margin: 30px;
 }
@@ -855,4 +860,5 @@ transition: background-position 0.3s;
 .dependent__text__three {
     left: 50%;
 }
+
 

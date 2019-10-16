@@ -192,6 +192,13 @@
     .owl-carousel {
         height:240px;
            }
+           .my__price{
+            width: 750px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    
 
 }
 /* Стили для маленьких экранов (дисплей шириной от 576 пикселей до 767 пикселей) */
@@ -349,6 +356,11 @@
         height: 130px;
         width: 397px;
     }
+    .my__price {
+        width: 441px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 /*--------------------------------------------------MOBILE-----------------------------------------------------------*/
 @media (max-width: 575px) {
@@ -501,5 +513,15 @@
     #btn-main1 {
         padding-left: 10px;
     }
-
+    .my__price {
+        width: 300px;
+       margin-left: 25px;
+       margin-right: 25px;
+    }
+    .text-right{
+        margin-right: 240px;
+    }
+    #inst h3 {
+        font-size: 27px;
+    }
 }
