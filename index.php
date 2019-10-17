@@ -79,6 +79,7 @@ if (isset($_POST['buttonform'])) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="adapt.css">
     <link rel="stylesheet" href="forma.css">
+    <link href="animate.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -103,10 +104,6 @@ if (isset($_POST['buttonform'])) {
 <body>
 <div class="container">
     <section>
-
-
-
-
         <div class="row">
             <div class="col-sm-4" id="fon_1">
                 <div class="pos-f-t">
@@ -168,10 +165,14 @@ if (isset($_POST['buttonform'])) {
 
                 });
             </script>
+
             <div class="col-sm-4" id="heder-col">
-                <img class="logo__malinna" src="img/malinna_text_logo.png" alt="">
-                <p class="studio__nails">Студия ногтевого сервиса</p>
+                <img class="logo__malinna animated flipInX" src="img/malinna_text_logo.png" alt="">
+                <p class="studio__nails animated pulse">Студия ногтевого сервиса</p>
             </div>
+
+
+
 
             <div class="col-sm-4">
                 <div id="logo-col">
@@ -184,15 +185,15 @@ if (isset($_POST['buttonform'])) {
         </div>
 
         <div class="row">
-            <div class="col-sm-12 call__me">
+            <div class="col-sm-12 call__me animated fadeIn">
                 <h4>+38 (096) 323 50 00</h4>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-12" id="btn-main">
-                <button type="button" id="my__button-order" class="btn btn-primary button__order" data-toggle="modal" data-target=".bd-example-modal-lg__order">  Записаться</button>
-        </div>
+                <button type="button" id="my__button-order" class="btn btn-primary button__order" data-toggle="modal" data-target="#fistModal">  Записаться</button>
+            </div>
         </div>
     </section>
 
@@ -201,7 +202,7 @@ if (isset($_POST['buttonform'])) {
         <div class=" about " id="menu1_child">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="about__us"><p>О нас</p>
+                    <div class="about__us "><p>О нас</p>
                         <div class="pink__line"></div>
                     </div>
 
@@ -239,14 +240,13 @@ if (isset($_POST['buttonform'])) {
         <div id="menu2_child">
             <div class="row line__price">
                 <div class="col-sm-12">
-                    <div class="about__us"><p>Прайс</p>
+                    <div class="about__us "><p>Прайс</p>
                         <div class="pink__line"></div>
                     </div>
                 </div>
             </div>
 
             <div class="row" id="rw_photos" style="margin:0;">
-
                 <div class="col-md-4 col-sm-12 img-col1">
                     <div class="father">
                         <div class="opasity__block"></div>
@@ -370,7 +370,6 @@ if (isset($_POST['buttonform'])) {
             </div>
         </div>
     </section>
-<!--menu-->
 
     <section class="section__none_padding">
         <div id="insta">
@@ -393,7 +392,6 @@ if (isset($_POST['buttonform'])) {
 
     <section class="section__none_padding">
         <div id="menu4_child">
-
             <div class="row line__contacts">
                 <div class="col-sm-12">
                     <div id="inst" class="contacts"><p>Контакты</p>
@@ -401,7 +399,6 @@ if (isset($_POST['buttonform'])) {
                     </div>
                 </div>
             </div>
-
             <div class="row" style="margin:0;">
                 <div class="col-md-4 col-sm-12 f-1">
                     <img class="photo__fasad" src="img/foto__fasad.png" alt="">
@@ -448,167 +445,183 @@ if (isset($_POST['buttonform'])) {
         </div>
     </div>
 </footer>
-<!--*********************************FORM********************************-->
-<!-- Large modal -->
 
-<div class="modal fade bd-example-modal-lg__order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-
-    <div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-        <div class="my__form">
-          <form id="my__form" method="POST" action="" target="">
-            <div class="order__service order__main_text"><label>Заказать услугу</label></div>
-            <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
-            <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="input_name_form"> </div>
-            <div class="services order__main_text"><label>Услуги</label></div> 
+<!-----FORM - ORDER modal window ------->
+<div class="modal fade " id="fistModal" tabindex="-1" role="dialog" aria-labelledby="fistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="my__form">
+            <form id="my__form" method="POST" action="" target="">
+                <div class="order__service order__main_text"><label>Заказать услугу</label></div>
+                <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
+                <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="input_name_form"> </div>
+                <div class="services order__main_text"><label>Услуги</label></div> 
 
             <section>
-              <div class="row row__services">
-                <div class="col-md-6 col-sm-12">
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service1">
-                      <label class="form-check-label" for="service1">
-                        <p class="manicure__form">Маникюр женский<p class="price__form"> 120 грн</p></p>
-                      </label>
-                    </div>
-                  </div>
+                <div class="row row__services">
+                    <div class="col-md-6 col-sm-12">
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service2">
-                      
-                      <label class="form-check-label" for="service2"><p class="manicure__form">Маникюр европейский<p class="price__form"> 100 грн</p></p></label>
-                    </div>
-                  </div>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service1">
+                                <label class="form-check-label" for="service1">
+                                    <p class="manicure__form">Маникюр женский<p class="price__form"> 120 грн</p></p></label>
+                            </div>
+                        </div>
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service3">
-                      <label class="form-check-label" for="service3"><p class="manicure__form">Гель-лак, френч, лунный.<p class="price__form"> 250 грн</p></p></label>
-                    </div>
-                  </div>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service2">
+                                <label class="form-check-label" for="service2">
+                                    <p class="manicure__form">Маникюр европейский<p class="price__form"> 100 грн</p></p></label>
+                            </div>
+                        </div>
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service4">
-                      <label class="form-check-label" for="service4"><p class="manicure__form">Дизайн ногтей(1шт)<p class="price__form"> 5-30 грн</p></p></label>
-                    </div>
-                  </div>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service3">
+                                <label class="form-check-label" for="service3">
+                                    <p class="manicure__form">Гель-лак, френч, лунный.<p class="price__form"> 250 грн</p></p></label>
+                            </div>
+                        </div>
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service5">
-                      <label class="form-check-label" for="service5"><p class="manicure__form">Ремонт ногтя(1шт)<p class="price__form"> 30 грн</p></p></label>
-                    </div>
-                  </div>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service4">
+                                <label class="form-check-label" for="service4">
+                                    <p class="manicure__form">Дизайн ногтей(1шт)<p class="price__form"> 5-30 грн</p></p></label>
+                            </div>
+                        </div>
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service6">
-                      <label class="form-check-label" for="service6"><p class="manicure__form">Снятие нарощенных<p class="price__form"> от 80 грн</p></p></label>
-                    </div>
-                  </div>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service5">
+                                <label class="form-check-label" for="service5">
+                                    <p class="manicure__form">Ремонт ногтя(1шт)<p class="price__form"> 30 грн</p></p></label>
+                            </div>
+                        </div>
 
-                  <div class="row one__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service7">
-                      <label class="form-check-label" for="service7"><p class="manicure__form">Spa-процедура<p class="price__form"> 80 грн</p></p></label>
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service6">
+                                <label class="form-check-label" for="service6">
+                                    <p class="manicure__form">Снятие нарощенных<p class="price__form"> от 80 грн</p></p></label>
+                            </div>
+                        </div>
+
+                        <div class="row one__coll">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service7">
+                                <label class="form-check-label" for="service7">
+                                    <p class="manicure__form">Spa-процедура<p class="price__form"> 80 грн</p></p></label>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="col-md-6 col-sm-12">
+                    <div class="row second__coll"> 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service1">
+                            <label class="form-check-label" for="service1">
+                                <p class="manicure__form">Маникюр мужской<p class="price__form">150 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service2">
+                            <label class="form-check-label" for="service2">
+                                <p class="manicure__form">Покрытие гель-лак<p class="price__form"> 230 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service3">
+                            <label class="form-check-label" for="service3">
+                                <p class="manicure__form">Снятие гель-лака <p class="price__form"> 50 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll ">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service4">
+                            <label class="form-check-label" for="service4">
+                                <p class="manicure__form">Наращивание ногтей<p class="price__form"> от 700 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service5">
+                            <label class="form-check-label" for="service5">
+                                <p class="manicure__form">Коррекция нарощенных<p class="price__form"> от 400 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service6">
+                            <label class="form-check-label" for="service6">
+                                <p class="manicure__form">Педикюр женский<p class="price__form"> 170 грн</p></p></label>
+                        </div>
+                    </div>
+
+                    <div class="row second__coll">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="service7">
+                            <label class="form-check-label" for="service7">
+                                <p class="manicure__form">Педикюр мужской<p class="price__form"> 250 грн</p></p></label>
+                        </div>
+                    </div>
 
                 </div>
+            </div>
+        </section>
 
-
-
-                <div class="col-md-6 col-sm-12">
-                  <div class="row second__coll"> 
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="service1">
-                        <label class="form-check-label" for="service1"><p class="manicure__form">Маникюр мужской<p class="price__form">150 грн</p></p></label>
-                      </div>
-                  </div>
-
-                  <div class="row second__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service2">
-                      <label class="form-check-label" for="service2"><p class="manicure__form">Покрытие гель-лак<p class="price__form"> 230 грн</p></p></label>
-                    </div>
-                  </div>
-
-                  <div class="row second__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service3">
-                      <label class="form-check-label" for="service3"><p class="manicure__form">Снятие гель-лака <p class="price__form"> 50 грн</p></p></label>
-                    </div>
-                  </div>
-
-                  <div class="row second__coll ">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service4">
-                      <label class="form-check-label" for="service4"><p class="manicure__form">Наращивание ногтей<p class="price__form"> от 700 грн</p></p></label>
-                    </div>
-                  </div>
-
-                  <div class="row second__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service5">
-                      <label class="form-check-label" for="service5"><p class="manicure__form">Коррекция нарощенных<p class="price__form"> от 400 грн</p></p></label>
-                    </div>
-                  </div>
-
-                  <div class="row second__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service6">
-                      <label class="form-check-label" for="service6"><p class="manicure__form">Педикюр женский<p class="price__form"> 170 грн</p></p></label>
-                    </div>
-                  </div>
-
-                  <div class="row second__coll">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="service7">
-                      <label class="form-check-label" for="service7"><p class="manicure__form">Педикюр мужской<p class="price__form"> 250 грн</p></p></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <section>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="btn__submit">
-                    <input type="submit" name="buttonform" id="close__button" value="Записаться">
-                  </div>
+                <div class="row">
+                    <div class="col-sm-12" id="btn-main">
+                        <button type="button" class="btn btn-primary button__order" data-toggle="modal" data-target=".bd-example-modal-sm" data-dismiss="modal">Отправить</button>
+                    </div>
                 </div>
-              </div>
             </section>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--*********************************FORM********************************-->
-
-<!--*********************************FORM_CALL_YOU********************************-->
-<iframe name="FormName" style="display: none;"></iframe>
-<div id="background__grey2" class="container_background" style="display: none;">
-    <div class=" container">
-        <div class="form__thank">
-            <form id="form__thank" method="POST" action="" target="FormName">
-                <label for="text__label">Спасибо за запись! Мы сегодня свяжемся с Вами!</label>
             </form>
         </div>
     </div>
 </div>
-<!--*********************************FORM_CALL_YOU********************************-->
+</div>
+<!-----/FORM - ORDER ------->
 
-<!------------------------------------PRICE-------------------------------------->
+<!-------FORM_CALL_YOU------->
+<div class="modal fade " id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content modal_thank">
+    <p class="wordsofthanks">Спасибо за запись! Мы сегодня свяжемся с Вами!</p>
+    </div>
+    <div class="modal-footer">
+        <div class="col-sm-12" id="btn-main">
+            <button type="button" class="btn btn-primary button__order" data-dismiss="modal">Закрыть</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-------/FORM_CALL_YOU------->
 
+<!---------!!!FORM CALL YOU---------->
+<script>
+ $('#fistModal').on('hidden.bs.modal', function(){
+ $('#secondModal').modal('show')
+})
+</script>
+<!---------/FORM CALL YOU---------->
+
+<!---------PRICE modal window-------------->
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
      aria-hidden="true">
@@ -734,11 +747,9 @@ if (isset($_POST['buttonform'])) {
         </div>
     </div>
 </div>
-<!------------------------------------PRICE-------------------------------------->
+<!-------/PRICE----------->
 
-<!------------------------------------Your__sweet_manicure-------------------------------------->
-
-<script src="script__order.js"></script>
+<!---------Your__sweet_manicure write text---------->
 <script>
     document.addEventListener('DOMContentLoaded', function (event) {
         // array with texts to type in typewriter
@@ -823,8 +834,8 @@ if (isset($_POST['buttonform'])) {
                 // text exists! start typewriter animation
                 typeWriter(dataText[i], 0, function () {
                     // after callback (and whole text has been animated), start next text
-
                 });
+
             }
         }
 
@@ -832,24 +843,30 @@ if (isset($_POST['buttonform'])) {
         setTimeout(function () {
             $('.sweet__manicure2').show();
             StartTextAnimation(0);
-
         }, 1800);
+
     });
+
 </script>
+<!---------/ Your__sweet_manicure write text---------->
+
+
+<!---------!!!menu---------->
 <script>
 
     $(window).scroll(function () {
         $('#navbarToggleExternalContent').removeClass('show');
         $('#navbarToggleExternalContent').addClass('hide');
-
     });
+
     $('#navbarToggleExternalContent').on('mouseleave', function(){
-$(this).removeClass('show')
-})
+    $(this).removeClass('show')
+    })
 </script>
+<!---------/menu---------->
 
+<!---------OWLCarousel---------->
 <script>
-
 
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -876,7 +893,7 @@ $(this).removeClass('show')
     $('.owl-nav').removeClass('disabled');
 
 </script>
-
+<!---------/OWLCarousel---------->
 
 </body>
 </html>

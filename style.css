@@ -513,10 +513,17 @@ section {
     font-family: myriad-pro, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-
-
 }
-
+.modal_thank{
+    border-radius: 0px;
+ 
+}
+.wordsofthanks{
+    padding: 20px;
+    margin: 0px;
+    font-size: 14px;
+    font-family: myriad-pro, sans-serif;
+}
 #btn-main .button__order {
     color: white !important;
     background-color: #F75368 !important;
@@ -757,15 +764,12 @@ section {
     width: 100%;
     
 }
-.opasity__block:hover {
-    transform: translate(100%);
-}
+
 .opasity__block {
     background: rgba(255, 255, 255, 0.7);
     height: 100%;
     width: 100%;
     position: absolute;
-    transition-duration: 1000ms;
 }
 
 .icon {
