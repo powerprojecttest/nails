@@ -587,7 +587,7 @@ if (isset($_POST['buttonform'])) {
             <section>
                 <div class="row">
                     <div class="col-sm-12" id="btn-main">
-                        <button type="button" class="btn btn-primary button__order" data-toggle="modal" data-target=".bd-example-modal-sm" data-dismiss="modal">Отправить</button>
+                        <button type="button" class="btn btn-primary button__order" data-toggle="modal" id="closeBtn" data-target=".bd-example-modal-sm" data-dismiss="modal">Отправить</button>
                     </div>
                 </div>
             </section>
@@ -611,12 +611,10 @@ if (isset($_POST['buttonform'])) {
     </div>
   </div>
 </div>
-<!-------/FORM_CALL_YOU------->
 
-<!---------!!!FORM CALL YOU---------->
 <script>
- $('#fistModal').on('hidden.bs.modal', function(){
- $('#secondModal').modal('show')
+ $('#closeBtn').on('click', function(){
+    $('#secondModal').modal('show')
 })
 </script>
 <!---------/FORM CALL YOU---------->
