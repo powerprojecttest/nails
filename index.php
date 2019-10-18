@@ -458,8 +458,9 @@ if (isset($_POST['buttonform'])) {
             <div class="my__form">
             <form id="my__form" method="POST" action="" target="">
                 <div class="order__service order__main_text"><label>Заказать услугу</label></div>
-                <div class="your__name"><input placeholder="Ваше имя" type="text" name="inputform"> </div>
-                <div class="your__phone"><input placeholder="Ваш телефон" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="input_name_form"> </div>
+                <div class="your__name"><input id="yourname" placeholder="Ваше имя" type="text" name="inputform"> </div>
+                <div class="your__phone"> 
+                <input id="yourphone"  placeholder="+38 ( *** ) *** ****" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" value="+38 0" name="input_name_form"> </div>
                 <div class="services order__main_text"><label>Услуги</label></div> 
 
             <section>
@@ -597,6 +598,28 @@ if (isset($_POST['buttonform'])) {
 </div>
 </div>
 <!-----/FORM - ORDER ------->
+<script>
+$(document).ready(function() {
+  $('#my__form').submit(function(e) {
+    e.preventDefault();
+    var your_name = $('#yourname').val();
+    var your_phone = $('#yourphone').val();
+
+    $(".error").remove();
+
+    if (your_name.length< 1) {
+      $('#yourname').after('<span class="error">This field is required</span>');
+    }
+    if (your_phone.length< 1) {
+      $('#yourphone').after('<span class="error">This field is required</span>');
+    }
+    
+  });
+});
+</script>
+
+
+
 
 <!-------FORM_CALL_YOU------->
 <div class="modal fade " id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel" aria-hidden="true">
