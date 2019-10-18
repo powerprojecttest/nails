@@ -21,7 +21,21 @@
 .portfolio{
     padding-top: 20px;
 }
+#sticky__button{
+    position: absolute;
+    text-transform: uppercase;
+    color: white !important;
+    border-radius: 2px !important;
+    border-color: transparent;
+    width: 250px;
+    left: 39%;
+    bottom: 10%;
+    background: linear-gradient(to right, #F75368 0%, #f8b3b5 50%, #F75368 50%, #f8b3b5 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
 
+}
 /* Стили для больших экранов (дисплей шириной от 992 пикселей до 1199 пикселей) */
 @media (min-width: 992px) and (max-width: 1199px)  {
         /*----more nails------*/
@@ -35,6 +49,10 @@
     width: 300px ;
     height: 300px ;
     padding-bottom: 20px;
+    }
+    #sticky__button{
+    left: 37%;
+    bottom: 0%;
     }
 }
 /* Стили для средних экранов (дисплей шириной от 768 пикселей до 991 пикселей) */
@@ -54,6 +72,10 @@
     height: 220px ;
     padding-bottom: 20px ;
     }
+    #sticky__button{
+        left: 32%;
+        bottom: 0%;
+        }
 }
 /* Стили для маленьких экранов (дисплей шириной от 576 пикселей до 767 пикселей) */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -87,6 +109,12 @@
     .tell-center__new {
         margin-top: 210px;
     }
+    #sticky__button{
+        left: 30%;
+        bottom: 0%;
+        position: fixed;
+        z-index: 101;
+        }
 }
 /*----------MOBILE---------------*/
 @media (max-width: 575px) {
@@ -112,5 +140,11 @@
     }
     .photo__nails {
         margin-top: -80px;
+    }
+    #sticky__button{
+        position: fixed;
+        z-index: 101;
+        left: 17%;
+        bottom: 0%;
     }
 }
