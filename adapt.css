@@ -192,10 +192,13 @@
     .owl-carousel {
         height:240px;
            }
-           .my__price{
-            width: 750px;
-            padding-left: 20px;
-            padding-right: 20px;
+    .owl-prev, .owl-next {
+        top: 28%;
+    }
+    .my__price{
+        width: 750px;
+        padding-left: 20px;
+        padding-right: 20px;
         }
 
     
@@ -487,8 +490,10 @@
     .owl-prev {
         width: 39px;
         height: 60px;
-        top: 28%;
         left: 5px;
+    }
+    .owl-prev, .owl-next {
+        top: 18%;
     }
     .arrow_left {
         width: 20px;
@@ -499,7 +504,6 @@
     .owl-next {
         width: 39px;
         height: 60px;
-        top: 28%;
     }
     .arrow_right {
         width: 20px;
