@@ -1,0 +1,193 @@
+.container{
+    
+}
+
+/*-------------------------FORM--------------------------*/
+.error__text{
+    padding-left: 100px;
+}
+.one__coll{
+    width: 790px;
+    margin-left: 10px;
+}
+.second__coll{
+    width: 400px;
+    margin-left: 10px;
+}
+.container_background{
+    background: rgba(14,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+.container_background_price{
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+.your__name, .your__phone{
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+}
+.order__main_text{
+    font-family: 'Marck Script', cursive;
+
+}
+.btn-primary:focus {
+    box-shadow:none;
+}
+.btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+    }
+.row__services{
+    margin: 10px;
+}
+.order__service{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.order__service, .services{
+    text-align: center;
+    color: #F14A64;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.your__name input{
+    width: 600px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+.your__phone{
+    padding-bottom: 20px;
+ 
+}
+.your__phone input{
+    width: 600px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+.manicure__form{
+    font-size: 16px;
+    padding-left: 10px;
+    width: 230px;
+}
+.price__form{
+    color: #F14A64;
+    padding-left: 10px;
+}
+.form-check-label{
+    display: flex;
+}
+#close__button {
+    text-transform: uppercase;
+    color:white !important; 
+    background-color: #F75368 !important; 
+    border-radius:2px !important;
+    border-color:transparent;
+    width:220px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45%;
+    margin-top: 0px;
+
+    background: linear-gradient(to right, #F75368 0%, #f8b3b5 50%, #F75368 50%, #f8b3b5 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+    }
+    
+    #close__button:hover{
+        background-position:0 0;
+        cursor: pointer;
+    }
+    .my__form{
+        border-radius: 10px;
+        width: 790px;
+        background: rgba(255,255,255,0.9);
+
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .modal-dialog {
+            max-width: 760px;
+        }
+        .my__form {
+            width: 750px;
+        }
+        .your__name input {
+            margin-left: 75px;
+        }
+        .your__phone input {
+            margin-left: 75px;
+        }
+        .error__text{
+            padding-left: 30px;
+        }
+        .error__text{
+            padding-left: 75px;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        .modal-dialog {
+            max-width: 470px;
+        }
+        .my__form {
+            width: 460px;
+        }
+        .your__name input {
+            margin-left: 30px;
+            width: 400px;
+        }
+        .your__phone input {
+            margin-left: 30px;
+            width: 400px;
+        }
+        .error__text{
+            padding-left: 35px;
+        }
+    }
+    @media (max-width: 575px) {
+        .modal-dialog {
+            max-width: 370px;
+        }
+        .my__form {
+            width: 340px;
+        }
+        .your__name input {
+            margin-left: 27px;
+            width: 300px;
+        }
+        .your__phone input {
+            margin-left: 27px;
+            width: 300px;
+        }
+    .col-sm-12{
+        padding-left: 0px;
+    }
+    .manicure__form {
+        font-size: 14px;
+    }
+    .price__form {
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    .error__text{
+        padding-left: 35px;
+    }
+    }
+    

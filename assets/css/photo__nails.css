@@ -1,0 +1,165 @@
+.logo__malinna__new{ 
+    margin-left: 60px;
+}
+.studio__nails__new{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding-left: 55px;
+    padding-top: 15px;
+}
+.photo{
+    width: 350px;
+    height: 350px;
+    padding-bottom: 30px;
+}
+#btn-main3{
+    padding-top: 20px;
+    padding-bottom: 500px;
+}
+.portfolio{
+    padding-top: 20px;
+}
+#sticky__button{
+    position: absolute;
+    text-transform: uppercase;
+    color: white !important;
+    border-radius: 2px !important;
+    border-color: transparent;
+    width: 250px;
+    left: 39%;
+    bottom: 10%;
+    background: linear-gradient(to right, #F75368 0%, #f8b3b5 50%, #F75368 50%, #f8b3b5 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+
+}
+.sweet__manicure1__new {
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    transform: rotate(-20deg);
+    padding-left: 100px;
+    margin-bottom: 0;
+}
+
+.sweet__manicure2__new {
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    transform: rotate(-20deg);
+    padding-left: 130px;
+    padding-top: 0px;
+}
+/* Стили для больших экранов (дисплей шириной от 992 пикселей до 1199 пикселей) */
+@media (min-width: 992px) and (max-width: 1199px)  {
+        /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 30px;
+    }
+    .studio__nails__new{
+        padding-left: 30px;
+    }
+    .photo {
+    width: 300px ;
+    height: 300px ;
+    padding-bottom: 20px;
+    }
+    #sticky__button{
+    left: 37%;
+    bottom: 0%;
+    }
+}
+/* Стили для средних экранов (дисплей шириной от 768 пикселей до 991 пикселей) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 0px;
+        padding-right: 45px;
+
+    }
+    .studio__nails__new{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .photo {
+    width: 220px ;
+    height: 220px ;
+    padding-bottom: 20px ;
+    }
+    #sticky__button{
+        left: 32%;
+        bottom: 0%;
+        }
+}
+/* Стили для маленьких экранов (дисплей шириной от 576 пикселей до 767 пикселей) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /*----more nails------*/
+    .logo__malinna__new{ 
+        margin-left: 0px;
+        padding-right: 45px;
+    }
+    
+    .studio__nails__new{
+        width: 200px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .logo__malina_manicure__new {
+        margin-top: 0px;
+        margin-left: -80px;
+    }
+    .sweet__manicure1__new{
+        margin-top: -15px;
+        margin-left: -110px;
+    }
+    .sweet__manicure2__new{
+        margin-left: -110px;
+    }
+    .photo {
+    width: 400px ;
+    height: 400px ;
+    padding-bottom: 20px ;
+    }
+    .tell-center__new {
+        margin-top: 210px;
+    }
+    #sticky__button{
+        left: 30%;
+        bottom: 0%;
+        position: fixed;
+        z-index: 101;
+        }
+}
+/*----------MOBILE---------------*/
+@media (max-width: 575px) {
+    /*----more nails------*/
+    .logo__malina_manicure__new {
+        margin-top: -310px;
+        margin-left: -80px;
+    }
+    .sweet__manicure1__new{
+        margin-top: -145px;
+        margin-left: -70px;
+    }
+    .sweet__manicure2__new{
+        margin-left: -70px;
+    }
+    .tell-center__new {
+        margin-top: 100px;
+    }
+    .photo {
+    width: 340px ;
+    height: 340px ;
+    padding-bottom: 10px ;
+    }
+    .photo__nails {
+        margin-top: -80px;
+    }
+    #sticky__button{
+        position: fixed;
+        z-index: 101;
+        left: 17%;
+        bottom: 0%;
+    }
+}
