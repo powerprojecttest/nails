@@ -91,7 +91,7 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'order') {
                     <div class="order__service order__main_text"><span>Заказать услугу</span></div>
 
                     <label class="your__name"><input id="yourname" placeholder="Ваше имя" type="text" name="first_name"> </label>
-                    <label class="your__phone"><input id="yourphone"  placeholder="+38 (0**) *** ****" type="tel"  name="phone"> </label>
+                    <label class="your__phone"><input id="yourphone"  placeholder="Ваш телефон" type="tel"  name="phone"> </label>
 
                     <div class="services order__main_text"><span>Услуги</span></div>
 
