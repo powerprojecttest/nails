@@ -53,10 +53,10 @@ $(document).ready(function() {
             $('#yourphone').after('<span class="error"></br><p class="error__text">Это поле обязательно для заполнения</p></span>');
             check = false;
         }
-        else if(!your_phone.match(/^\d+/)){
+        /*else if(!your_phone.match(/^\d+/)){
             $('#yourphone').after('<span class="error"></br><p class="error__text">Введите цыфры </p></span>');
             check = false;
-        }
+        }*/
         if (check == false){
             e.preventDefault();
         }

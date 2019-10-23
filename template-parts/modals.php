@@ -57,7 +57,7 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'order') {
     $mail->Subject = 'Новая запись на маникюр!';
     $mail->Body = $html;
 
-    //$result = $mail->send();
+    $result = $mail->send();
     $result = true;
     if ($result) {
         $script = "<script>";
