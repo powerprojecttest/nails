@@ -149,9 +149,10 @@
         margin-top: 100px;
     }
     .photo {
-    width: 340px ;
-    height: 340px ;
-    padding-bottom: 10px ;
+        width: 358px ;
+        height: 358px ;
+        padding-bottom: 10px ;
+        padding-left: 15px;
     }
     .photo__nails {
         margin-top: -80px;
