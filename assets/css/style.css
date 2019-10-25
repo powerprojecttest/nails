@@ -170,15 +170,16 @@ iframe {
 }
 
 .about__us {
-    width: 150px;
+    width: 120px;
     margin: auto;
     position: relative;
     margin-bottom: 10px;
+    margin-top: 10px;
 
 }
 
 .contacts {
-    width: 170px;
+    width: 120px;
     margin: auto;
     position: relative;
 }
@@ -188,23 +189,27 @@ iframe {
     position: relative;
     z-index: 2;
     text-align: center;
-    font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-family: myriad-pro, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .photo__nails {
-    width: 200px;
+    width: 150px;
     margin: auto;
     position: relative;
 }
-
+.owl-carousel .owl-item img {
+    width: 80% !important;
+}
 .photo__nails p {
     margin-bottom: 0px;
     position: relative;
     z-index: 2;
     text-align: center;
-    font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-family: myriad-pro, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .about__us p {
@@ -212,8 +217,9 @@ iframe {
     position: relative;
     z-index: 2;
     text-align: center;
-    font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-family: myriad-pro, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .button__more {
@@ -241,7 +247,7 @@ iframe {
 }
 
 h3 {
-    font-family: 'Marck Script', cursive;
+    font-family: myriad-pro, sans-serif;
 }
 
 p {
@@ -272,7 +278,8 @@ p, h6, h7 {
 }
 
 #inst h3 {
-    font-size: 36px;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 #inst {
@@ -605,6 +612,7 @@ section {
     background-size: 200% 100%;
     background-position: 100% 0;
     transition: background-position 0.3s;
+    margin-top: -20px;
 }
 
 #btn-main3 .button__more-nails:hover {
@@ -669,6 +677,7 @@ section {
     padding: 0 50px;
     font-family: myriad-pro, sans-serif;
     font-size: 18px;
+
     letter-spacing: 0.75px;
     line-height: normal;
 }

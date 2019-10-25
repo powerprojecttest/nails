@@ -324,14 +324,14 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'order') {
                     </div>
 
                     <div class="row price">
-                        <div class="col-md-10 col-sm-12 manicure"><p>Дизайн ногтей (1 ноготь). </p>
+                        <div class="col-md-10 col-sm-12 manicure"><p>Дизайн ногтя. </p>
                             <p class="red__text">Дизайн, роспись и декорирование ногтей </p></div>
                         <div class="col-md-1 col-sm-6 text-right"></div>
                         <div class="col-md-1 col-sm-6 text-left"><p>5-30 грн</p></div>
                     </div>
 
                     <div class="row price">
-                        <div class="col-md-10 col-sm-12 manicure"><p>Ремонт ногтей (1 ноготь).</p>
+                        <div class="col-md-10 col-sm-12 manicure"><p>Ремонт ногтя.</p>
                             <p class="red__text">Удаление трещин, надломов и сколов ногтя</p></div>
                         <div class="col-md-1 col-sm-6 text-right"></div>
                         <div class="col-md-1 col-sm-6 text-left"><p>30 грн</p></div>

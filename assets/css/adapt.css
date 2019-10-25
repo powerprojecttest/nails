@@ -81,9 +81,12 @@
     }
     .owl-carousel {
         height:345px;
-           }
-           #btn-main1 {
-            padding-left: 690px;
+    }
+    #btn-main1 {
+        padding-left: 690px;
+    }
+    #btn-main3 .button__more-nails{
+        margin-top: -50px;
         }
 
 }
@@ -121,7 +124,9 @@
         margin-left: 70%;
     }
     
-    
+    #btn-main3 .button__more-nails{
+        margin-top: -30px;
+        }
     .icon {
         top: 5%;
         position: absolute;
@@ -374,12 +379,12 @@
         font-size: 12px;
     }
     .logo__malina_manicure{
-        margin-left: -70px;
-        margin-top: -10px;
+        margin-left: -100px;
+        margin-top: 0px;
     }
     .sweet__manicure1{
-        margin-left: -20px;
-        margin-top: -25px;
+        margin-left: -10px;
+        margin-top: -80px;
         font-size: 16px;
     }
     .sweet__manicure2{
@@ -466,7 +471,7 @@
         height:120px;
            }
     #inst h3 {
-        font-size: 26px;
+        font-size: 16px;
     }
     .photo__fasad{
         width: 100%;
@@ -489,7 +494,7 @@
     .owl-prev {
         width: 39px;
         height: 60px;
-        top: 28%;
+        top: 15%;
         left: 5px;
     }
     .arrow_left {
@@ -501,7 +506,7 @@
     .owl-next {
         width: 39px;
         height: 60px;
-        top: 28%;
+        top: 15%;
     }
     .arrow_right {
         width: 20px;
@@ -523,10 +528,24 @@
     .text-right{
         margin-right: 240px;
     }
-    #inst h3 {
-        font-size: 27px;
-    }
+
     .photo__nails p {
-        margin-top: 50px;
-    
+        margin-top: 60px;
+        padding-left: 17px;
+    }
+    .subscribe__icon {
+        padding-left: 5px;
+    }
+    p {
+        width: 100%;
+    }
+    .red__text {
+        padding-left: 15px;
+    }
+    .text-left {
+        font-weight: bolder;
+    }
+    #btn-main3 .button__more-nails{
+        margin-top: -25px;
+    }
 }

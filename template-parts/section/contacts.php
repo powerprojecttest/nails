@@ -21,7 +21,7 @@
                     <p class="time">пн-вс 10:00 - 20:00</p><br><br>
                     <p class="malinastudio__insta">
                         <a href="https://www.instagram.com/malinnastudio/" target="_blank">
-                            <i>malinastudio</i><img class="malinastudio" src="assets/img/insta__icon.png" alt="">
+                            <i>malinnastudio</i><img class="malinastudio" src="assets/img/insta__icon.png" alt="">
                         </a>
                     </p>
                 </div>

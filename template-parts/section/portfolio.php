@@ -17,13 +17,6 @@
                 </div>
             </div>
             <div class="overflow">
-                <div>
-                    <a class="fancybox" rel="group" href="assets/img/nail_2.jpg">
-                        <img src="assets/img/nail_2.jpg" class="photo__gallery" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="overflow">
                 <div><a class="fancybox" rel="group" href="assets/img/nail_3.jpg">
                         <img src="assets/img/nail_3.jpg" class="photo__gallery" alt="">
                     </a>
