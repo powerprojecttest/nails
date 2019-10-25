@@ -98,8 +98,7 @@
                     <p class="studio__nails__new" style="font-size:12px;">Студия ногтевого сервиса</p>
                 </div>
                 <div class="col-sm-4" id="heder-col">
-                    <div class="tell-center__new" style="text-align: center; padding-top: 40px;"><p
-                                style="font-size: 16px;">+38 (096) 323 50 00</p></div>
+                <a href="tel:+38(096) 323 50 00" link="black">+38 (096) 323 50 00</a>
                     <div id="btn-main">
                         <button type="button" id="my__button-order" class="btn btn-primary button__order"
                                 data-toggle="modal" data-target="#fistModal"> Записаться
