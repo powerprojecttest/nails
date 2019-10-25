@@ -80,7 +80,7 @@
 
             <div class="row">
                 <div class="col-sm-12 call__me animated fadeIn">
-                    <h4>+38 (096) 323 50 00</h4>
+                <a href="tel:+38(096) 323 50 00" link="black">+38 (096) 323 50 00</a>
                 </div>
             </div>
 
