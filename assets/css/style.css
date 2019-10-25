@@ -5,7 +5,10 @@ body {
 .container {
     padding-top: 20px;
 }
-
+a{
+    color:black;
+    font-family: myriad-pro, sans-serif;
+}
 #navbarToggleExternalContent {
     z-index: 100;
     position: absolute !important;
@@ -721,7 +724,10 @@ section {
 .cont__price {
     margin: 30px;
 }
-
+.price{
+    border-bottom: 1px solid rgb(228, 127, 145);
+    margin-bottom: 10px;
+}
 .price__text {
     background-image: -moz-linear-gradient(0deg, rgb(175, 23, 43) 0%, rgb(228, 127, 145) 100%);
     background-image: -webkit-linear-gradient(0deg, rgb(175, 23, 43) 0%, rgb(228, 127, 145) 100%);

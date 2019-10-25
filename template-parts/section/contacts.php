@@ -14,16 +14,13 @@
             <div class="col-md-4 col-sm-12 adress">
                 <p class="our__adress"><strong>АДРЕС:</strong></p><br>
                 <div class="adress__content">
-                    <p class="our__adress__text">Cофиевская Борщаговка,</p>
+                    <p class="our__adress__text">г.Киев, Cофиевская Борщаговка,</p>
                     <p> ЖК София,</p>
                     <p> ул.Л.Украинки,6</p><br>
                     <p class="time__hours"><strong>Время работы:</strong></p>
-                    <p class="time">пн-вс 10:00 - 20:00</p><br><br>
-                    <p class="malinastudio__insta">
-                        <a href="https://www.instagram.com/malinnastudio/" target="_blank">
-                            <i>malinnastudio</i><img class="malinastudio" src="assets/img/insta__icon.png" alt="">
-                        </a>
-                    </p>
+                    <p class="time">пн-вс 10:00 - 20:00</p><br>
+                    <a href="tel:+38(096) 323 50 00" link="black">+38 (096) 323 50 00</a>
+                    <br> <br>
                 </div>
             </div>
 
